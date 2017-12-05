@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import '../css/framework7-icons.css';
+import About from './pages/About.jsx'
 import {
   Framework7App,
   Statusbar,
@@ -220,14 +221,13 @@ const AppLoginScreen = () => (
   </LoginScreen>
 );
 
-export const App = () => (
-  //Change themeType to "material" to use the Material theme
-  <Framework7App themeType="ios" routes={routes}>
-    <Statusbar />
-    <LeftPanel />
-    <RightPanel />
-    <MainViews />
-    <AppPopup />
-    <AppLoginScreen />
-  </Framework7App>
-);
+export const App = () => //Change themeType to "material" to use the Material theme
+         <Framework7App themeType="ios" routes={routes}>
+           {/* <About /> */}
+           <Statusbar />
+           <LeftPanel />
+           <RightPanel />
+           <MainViews />
+           <AppPopup />
+           <AppLoginScreen />
+         </Framework7App>
