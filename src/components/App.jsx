@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-
+import '../css/framework7-icons.css';
 import {
   Framework7App,
   Statusbar,
@@ -10,6 +10,7 @@ import {
   Page,
   ContentBlock,
   ContentBlockTitle,
+  Icon,
   List,
   ListItem,
   Views,
@@ -28,6 +29,7 @@ import {
   FormLabel,
   FormInput
 } from 'framework7-react';
+import { IconButton } from 'material-ui';
 
 import { routes } from '../routes';
 
@@ -127,11 +129,15 @@ const MainViews = (props, context) => {
         {context.framework7AppContext.theme.ios ? (
           <Navbar>
             <NavLeft>
-              <Link icon="icon-bars" openPanel="left" />
+              <Link openPanel="left">
+                <Icon f7="chevron_left" size="18px" id="nav-back-button" />
+              </Link>
             </NavLeft>
-            <NavCenter sliding>Framework7</NavCenter>
+            <NavCenter id="nav-welcome-center">Get Started</NavCenter>
             <NavRight>
-              <Link icon="icon-bars" openPanel="right" />
+              <Link openPanel="right">
+                <Icon f7="close" size="22px" id="nav-close-button" />
+              </Link>
             </NavRight>
           </Navbar>
         ) : null}
@@ -149,41 +155,6 @@ const MainViews = (props, context) => {
                 </NavRight>
               </Navbar>
             ) : null}
-            <ContentBlockTitle>Welcome to my App</ContentBlockTitle>
-            <ContentBlock inner>
-              <p>
-                Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent
-                rhoncus enim ornare ipsum aliquet ultricies. Pellentesque
-                sodales erat quis elementum sagittis.
-              </p>
-            </ContentBlock>
-            <ContentBlockTitle>Navigation</ContentBlockTitle>
-            <List>
-              <ListItem link="/about/" title="About" />
-              <ListItem link="/form/" title="Form" />
-            </List>
-            <ContentBlockTitle>Side Panels</ContentBlockTitle>
-            <ContentBlock>
-              <GridRow>
-                <GridCol width={50}>
-                  <Button openPanel="left">Left Panel</Button>
-                </GridCol>
-                <GridCol width={50}>
-                  <Button openPanel="right">Right Panel</Button>
-                </GridCol>
-              </GridRow>
-            </ContentBlock>
-            <ContentBlockTitle>Modals</ContentBlockTitle>
-            <ContentBlock>
-              <GridRow>
-                <GridCol width={50}>
-                  <Button openPopup="#popup">Popup</Button>
-                </GridCol>
-                <GridCol width={50}>
-                  <Button openLoginScreen="#login-screen">Login Screen</Button>
-                </GridCol>
-              </GridRow>
-            </ContentBlock>
           </Page>
         </Pages>
       </View>
