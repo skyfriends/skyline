@@ -155,6 +155,7 @@ const MainViews = (props, context) => {
                 </NavRight>
               </Navbar>
             ) : null}
+            <Button id="continue-button">Continue</Button>
           </Page>
         </Pages>
       </View>
