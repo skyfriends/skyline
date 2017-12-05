@@ -9,7 +9,8 @@ import {
   NavRight,
   Link,
   Icon,
-  Button
+  Button,
+  Page
 } from 'framework7-react';
 
 export const Welcome = () => {
@@ -29,14 +30,20 @@ export const Welcome = () => {
             </Link>
           </NavRight>
         </Navbar>
-        ) : null}
-        <ContentBlock id="welcome-header">Open a new account </ContentBlock>
-        <ContentBlock id="welcome-sub">
-          You can open as many accounts as you'd like, - let's start with one.
-        </ContentBlock>
-        <Button big id="continue-button">
-          Continue
-        </Button>
+        <Page>
+          <ContentBlock className="gradient-block" inner>
+            <div className="gradient" id="top-gradient" />
+            <div className="gradient" id="middle-gradient" />
+            <div className="gradient" id="bottom-gradient" />
+          </ContentBlock>
+          <ContentBlock id="welcome-header">Open a new account </ContentBlock>
+          <ContentBlock id="welcome-sub">
+            You can open as many accounts as you'd like, - let's start with one.
+          </ContentBlock>
+          <Button big id="continue-button">
+            Continue
+          </Button>
+        </Page>
       </View>
     </Views>
   );
