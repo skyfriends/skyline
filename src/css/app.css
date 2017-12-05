@@ -1,18 +1,36 @@
-* {
-  font-family: 'Open Sans', sans-serif;
+.gradient-block {
+  background: #e2e5eb;
 }
 
-.page {
-  background-color: #e2e5eb;
+.gradient {
+  background: #e2e5eb;
+  height: 40px;
+  margin-bottom: 12px;
+  /* border: 1px solid black; */
 }
 
-.navbar {
-  background-color: #e2e5eb;
+#top-gradient {
+  background: linear-gradient(-90deg, white, #e2e5eb);
+  width: 80%;
 }
 
-.navbar::after {
-  background-color: #e2e5eb;
+#middle-gradient {
+  background: linear-gradient(-90deg, #e2e5eb, white);
+  width: 25%;
 }
+
+
+#bottom-gradient {
+width:50%;  
+background: linear-gradient(-90deg, white, #e2e5eb);
+}
+
+.page-content {
+  background: #e2e5eb;
+}
+
+.content-block-inner {
+  background: #e2e5eb;  
 
 #nav-back-button {
   color: black;
