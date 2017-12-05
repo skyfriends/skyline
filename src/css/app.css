@@ -16,18 +16,30 @@
 
 #nav-back-button {
   color: black;
+  margin-left: 10px;
 }
 
 #nav-close-button {
   color: black;
+  font-weight: 600;
+  margin-right: 10px;
 }
 
 #nav-welcome-center {
-  text-align: center;
+  margin: 0 auto;
   font-weight: 200;
   font-size: 0.8em;
 }
 
 #main-view {
   border: none;
+}
+
+#continue-button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #337be6;
+  color: white;
+  border-radius: 0;
 }
