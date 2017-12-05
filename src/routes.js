@@ -1,10 +1,13 @@
-import {About} from './components/pages/About';
-import {Form} from './components/pages/Form';
+import { About } from './components/pages/About';
+import { Form } from './components/pages/Form';
 
-export const routes = [{
+export const routes = [
+  {
     path: '/about/',
-    component: About
-}, {
+    component: About,
+  },
+  {
     path: '/form/',
-    component: Form
-}];
+    component: Form,
+  },
+];
