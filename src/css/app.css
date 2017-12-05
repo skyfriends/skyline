@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .gradient-block {
   background: #e2e5eb
 }
@@ -31,4 +32,38 @@ background: linear-gradient(-90deg, white, #e2e5eb);
 
 .content-block-inner {
   background: #e2e5eb;  
+=======
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+  background-color: #e2e5eb;
+}
+
+.navbar {
+  background-color: #e2e5eb;
+}
+
+.navbar::after {
+  background-color: #e2e5eb;
+}
+
+#nav-back-button {
+  color: black;
+}
+
+#nav-close-button {
+  color: black;
+}
+
+#nav-welcome-center {
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+#main-view {
+  border: none;
+>>>>>>> 4d41397009005fc9fb6e2ea98307792386a1df91
 }
