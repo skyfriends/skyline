@@ -42,4 +42,21 @@
   background-color: #337be6;
   color: white;
   border-radius: 0;
+  font-weight: 500;
+}
+
+#welcome-header {
+  font-size: 2.2em;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+  color: black;
+  margin-top: 50%;
+  margin-bottom: 0;
+}
+
+#welcome-sub {
+  font-weight: 200;
+  font-size: 1.15em;
+  position: relative;
+  margin: 0;
 }

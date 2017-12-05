@@ -155,7 +155,14 @@ const MainViews = (props, context) => {
                 </NavRight>
               </Navbar>
             ) : null}
-            <Button id="continue-button">Continue</Button>
+            <ContentBlock id="welcome-header">Open a new account </ContentBlock>
+            <ContentBlock id="welcome-sub">
+              You can open as many accounts as you'd like, - let's start with
+              one.
+            </ContentBlock>
+            <Button big id="continue-button">
+              Continue
+            </Button>
           </Page>
         </Pages>
       </View>
