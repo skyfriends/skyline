@@ -1,27 +1,5 @@
-.gradient-block {
-  background: #e2e5eb;
-}
-
-.gradient {
-  background: #e2e5eb;
-  height: 40px;
-  margin-bottom: 12px;
-  /* border: 1px solid black; */
-}
-
-#top-gradient {
-  background: linear-gradient(-90deg, white, #e2e5eb);
-  width: 80%;
-}
-
-#middle-gradient {
-  background: linear-gradient(-90deg, #e2e5eb, white);
-  width: 25%;
-}
-
-#bottom-gradient {
-  width: 50%;
-  background: linear-gradient(-90deg, white, #e2e5eb);
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
 .page-content {
