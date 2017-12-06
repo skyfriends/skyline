@@ -18,60 +18,60 @@ if Institutional {
 
 &&
 
-• Company email
+ï¿½ Companyï¿½email
 
-• Company Address
+ï¿½ Company Address
 
-• Phone number
+ï¿½ Phone number
 
-• Asset Under Management
+ï¿½ Asset Under Management
 
-• Password
+ï¿½ Password
 
-• Push Notification
+ï¿½ Push Notification
 }
 
 if Individual {
 
-• Email address
+ï¿½ Email address
 
-• Legal Name
+ï¿½ Legal Name
 
-• Address
+ï¿½ Address
 
-• Phone number
+ï¿½ Phone number
 
-• Employment
+ï¿½ Employment
 
-• Household income
+ï¿½ Household income
 
-• Estimated Investment Amount
+ï¿½ Estimated Investment Amount
 
-• Password
+ï¿½ Password
 }
 
 Main Page (links)
 --------------------------------
-• Portfolio
+ï¿½ Portfolio
 
-• Compare to market
+ï¿½ Compare to market
 
-• Messages
+ï¿½ Messages
 
-• About
+ï¿½ About
 
 corner:
 --------------
-110,199,196
-205,206,148
-201,182,87
-255,192,83
-136,195,164
+110,199,196 || #6EC7C4
+205,206,148 || #CDCE94
+201,182,87  || #C9B657
+255,192,83  || #FFC053
+136,195,164 || #88C3A4
 
 logo (clockwise):
 --------------
-245,159,37
-229,28,14
-234,138,167
-94,194,196
+245,159,37  || #F59F25
+229,28,14   || #E51C0E
+234,138,167 || #EA8AA7
+94,194,196  || #5EC2C4
 
