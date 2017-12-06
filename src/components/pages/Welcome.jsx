@@ -10,12 +10,14 @@ import {
   Link,
   Icon,
   Button,
-  Page
+  Page,
+  FormInput
 } from 'framework7-react';
+import '../../css/app.css'
+import { IndividualForm } from './individual-form'
 
 export const Welcome = () => {
-  return (
-    <Views>
+  return <Views>
       <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
         <Navbar>
           <NavLeft>
@@ -38,13 +40,18 @@ export const Welcome = () => {
           </ContentBlock>
           <ContentBlock id="welcome-header">Open a new account </ContentBlock>
           <ContentBlock id="welcome-sub">
-            You can open as many accounts as you'd like, - let's start with one.
+            You can open as many accounts as you'd like, - let's start with
+            one.
           </ContentBlock>
+          <FormInput className="user-type" type="select">
+            <option value="1">Company</option>
+            <option value="2">Individual</option>
+          </FormInput>
+          <IndividualForm className="individual-form" type="form"/>
           <Button big id="continue-button">
             Continue
           </Button>
         </Page>
       </View>
     </Views>
-  );
 };
