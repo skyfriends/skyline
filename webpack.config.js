@@ -43,7 +43,7 @@ module.exports = {
         loader: ExtractPlugin.extract(['css-loader', 'sass-loader']),
       },
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(png|jpg|eot|svg|ttf|woff|woff2)$/,
         use: [
           {
             loader: 'file-loader',
