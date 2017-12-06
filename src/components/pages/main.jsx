@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Navbar,
-  Views,
-  View,
-  NavLeft,
-  NavCenter,
-  NavRight,
-  Link,
-  Icon,
-  Page
-} from 'framework7-react';
+import { Navbar, Link, Page } from 'framework7-react';
 
 export const Main = () => {
   return (

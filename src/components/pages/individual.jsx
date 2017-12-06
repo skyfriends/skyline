@@ -5,13 +5,6 @@ import {
   FormInput,
   List,
   Navbar,
-  NavLeft,
-  NavCenter,
-  NavRight,
-  View,
-  Views,
-  Link,
-  Icon,
   Page
 } from 'framework7-react';
 
