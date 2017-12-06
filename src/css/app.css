@@ -1,3 +1,37 @@
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-content {
+  background: #e2e5eb;
+}
+
+.content-block-inner {
+  background: #e2e5eb;
+}
+
+#nav-back-button {
+  color: black;
+  margin-left: 10px;
+}
+
+#nav-close-button {
+  color: black;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+#nav-welcome-center {
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+#main-view {
+  border: none;
+}
+
 #continue-button {
   width: 100%;
   position: absolute;
