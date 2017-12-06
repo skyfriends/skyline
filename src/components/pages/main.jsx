@@ -16,7 +16,7 @@ import {
   ListItem
 } from 'framework7-react';
 
-export const Main = () => {
+export const MainView = () => {
   return (
     <Views>
       <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
@@ -31,13 +31,15 @@ export const Main = () => {
             <Link openPanel="right">
               <Icon f7="close" size="22px" id="nav-close-button" />
             </Link>
-            <Link>Portfolio</Link>
-            <Link>Compare To Market</Link>
-            <Link>Messages</Link>
-            <Link>About</Link>
           </NavRight>
         </Navbar>
-        <Page />
+
+        <Page>
+          <Link>Portfolio</Link>
+          <Link>Compare To Market</Link>
+          <Link>Messages</Link>
+          <Link>About</Link>
+        </Page>
       </View>
     </Views>
   );
