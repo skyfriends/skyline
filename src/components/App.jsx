@@ -59,7 +59,7 @@ const MainViews = (props, context) => {
             <ContentBlockTitle>Navigation</ContentBlockTitle>
 
             <List>
-              <ListItem link="/company/" title="Company" />
+              <ListItem link="/welcome/" title="Welcome" />
               <ListItem link="/individual/" title="Individual" />
               <ListItem link="/main/" title="Main" />
             </List>
@@ -67,8 +67,8 @@ const MainViews = (props, context) => {
               big
               round
               fill
-              href="/welcome/"
-              title="Welcome"
+              href="/company/"
+              title="Company"
               className="bottom-button"
             >
               Continue
