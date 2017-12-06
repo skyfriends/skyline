@@ -1,6 +1,11 @@
-
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+.bottom-button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .page-content {

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/framework7-icons.css';
+import '../css/app.css';
 
 import {
   Framework7App,
@@ -28,7 +29,9 @@ import {
   ListLabel,
   FormLabel,
   FormInput,
-  Icon
+  Icon,
+  Swiper,
+  SwiperSlide
 } from 'framework7-react';
 
 import { routes } from '../routes';
@@ -54,12 +57,22 @@ const MainViews = (props, context) => {
         <Pages>
           <Page>
             <ContentBlockTitle>Navigation</ContentBlockTitle>
+
             <List>
               <ListItem link="/welcome/" title="Welcome" />
-              <ListItem link="/company/" title="Company" />
               <ListItem link="/individual/" title="Individual" />
               <ListItem link="/main/" title="Main" />
             </List>
+            <Button
+              big
+              round
+              fill
+              href="/company/"
+              title="Company"
+              className="bottom-button"
+            >
+              Continue
+            </Button>
           </Page>
         </Pages>
       </View>
