@@ -1,0 +1,77 @@
+/* Eyeball*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 400px;
+}
+
+/* Container Element */
+.eye {
+    position: relative;
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    color: transparent;
+    /* This line is to show the hitbox for the icon */
+    background-color: #e2e5eb;
+    cursor: pointer;
+}
+/* set up pseudoelements */
+.eye:before, .eye:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+/* Eye Shape */
+.eye:before {
+    /* match the body */
+    top: 10%;
+    left: 10%;
+    background-color: #777;
+    width: 80%;
+    height: 80%;
+}
+/* Iris */
+.eye:after {
+    /* Match body color here */
+    border: 1em solid;
+    border-color: #5ec2c4;
+    width: 40%;
+    height: 40%;
+    margin-left: -20%;
+    margin-top: -20%;
+}
+
+.eye.shaped:after {
+    border-radius: 100%;
+    opacity: 1;
+}
+
+.eye.shaped:before {
+  background-color: white;
+    border-radius: 0 80% 0 80%;
+    transform: rotate(-45deg);
+    opacity: 1;
+}
+
+/* Circle*/
+
+.logo-circle {
+  	height: 60px;
+	width: 60px;
+	border-radius:180px;
+	-khtml-border-radius:180px;
+	-moz-border-radius:180px;		
+	-webkit-border-radius:180px;
+	border: 1px solid #000;
+	display: table;
+	float: left;
+	opacity: .6;
+}

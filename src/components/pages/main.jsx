@@ -15,7 +15,8 @@ import {
   FormLabel,
   ListItem
 } from 'framework7-react';
-
+import { Logo } from './logo'
+import '../../css/app.css'
 export const MainView = () => {
   return (
     <Views>
@@ -34,11 +35,12 @@ export const MainView = () => {
           </NavRight>
         </Navbar>
 
-        <Page>
+        <Page className='link-page'>
           <Link>Portfolio</Link>
           <Link>Compare To Market</Link>
           <Link>Messages</Link>
           <Link>About</Link>
+        <Logo className='logo-container'/>
         </Page>
       </View>
     </Views>
