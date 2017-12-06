@@ -24,6 +24,7 @@ export const Welcome = () => {
             </Link>
           </NavLeft>
           <NavCenter id="nav-welcome-center">Get Started</NavCenter>
+          <About />
           <NavRight>
             <Link openPanel="right">
               <Icon f7="close" size="22px" id="nav-close-button" />
