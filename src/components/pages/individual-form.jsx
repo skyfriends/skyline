@@ -1,6 +1,6 @@
 import React from 'react'
 import { ListItem, FormLabel, FormInput, List } from 'framework7-react'
-
+// BITCHES
 export const IndividualForm = () => {
   return (
     <List className form>
