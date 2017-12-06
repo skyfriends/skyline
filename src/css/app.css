@@ -2,10 +2,37 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.list-item-main {
+  list-style: none;
+  text-align: center;
+}
+
 .bottom-button {
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+.text-input-main > input {
+  line-height: 42px;
+  border: 1px solid #b2b2b2;
+  border-radius: 2px;
+  width: 80%;
+  margin: 0 auto;
+}
+.text-input-main > input::placeholder {
+  padding-left: 10px;
+  font-size: 1.3em;
+  line-height: 42px;
+}
+
+.text-input-main {
+  text-align: center;
+}
+
+.text-input-label {
+  font-size: 1.3em;
+  text-decoration: none;
 }
 
 .page-content {

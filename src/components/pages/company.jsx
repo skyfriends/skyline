@@ -18,9 +18,9 @@ export const Company = () => {
   return (
     <Page>
       <Navbar title="About" backLink="Back" sliding />
-      <ListItem>
-        <FormLabel>Company Name</FormLabel>
-        <FormInput type="text" placeholder="Name" />
+      <ListItem className="list-item-main">
+        <FormLabel className="text-input-label">Company Name</FormLabel>
+        <FormInput type="text" placeholder="Name" className="text-input-main" />
       </ListItem>
 
       <ListItem>
