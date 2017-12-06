@@ -23,7 +23,7 @@ if (production) {
 
 module.exports = {
   plugins,
-  entry: `${__dirname}/src/main.js`,
+  entry: `${__dirname}/src/index.js`,
   output: {
     filename: 'bundle.[hash].js',
     path: `${__dirname}/build`,
