@@ -1,0 +1,77 @@
+
+
+***Select User Type***
+--------------------------------
+Dropdown = (Institutional || Individual)
+
+if Institutional {
+
+(Investment Bank || Hedge Fund
+
+ || Mutual Fund
+
+ || Insurance Company
+
+ || ETF fund
+
+ || Other)
+
+&&
+
+• Company email
+
+• Company Address
+
+• Phone number
+
+• Asset Under Management
+
+• Password
+
+• Push Notification
+}
+
+if Individual {
+
+• Email address
+
+• Legal Name
+
+• Address
+
+• Phone number
+
+• Employment
+
+• Household income
+
+• Estimated Investment Amount
+
+• Password
+}
+
+Main Page (links)
+--------------------------------
+• Portfolio
+
+• Compare to market
+
+• Messages
+
+• About
+
+corner:
+--------------
+110,199,196
+205,206,148
+201,182,87
+255,192,83
+136,195,164
+
+logo (clockwise):
+--------------
+245,159,37
+229,28,14
+234,138,167
+94,194,196
+
