@@ -5,9 +5,10 @@ import { Framework7App } from 'framework7-react';
 import { Welcome } from './pages/Welcome';
 import { Company } from './pages/company-form';
 import { MainView } from './pages/main';
+import { Individual } from './pages/individual-form';
 
 export const App = () => (
   <Framework7App themeType="ios" routes={routes}>
-    <MainView />
+    <Individual />
   </Framework7App>
 );
