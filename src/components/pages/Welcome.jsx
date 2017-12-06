@@ -13,8 +13,8 @@ import {
   Page,
   FormInput
 } from 'framework7-react';
-
-import IndividualForm from './individual-form'
+import '../../css/app.css'
+import { IndividualForm } from './individual-form'
 
 export const Welcome = () => {
   return <Views>
@@ -43,11 +43,11 @@ export const Welcome = () => {
             You can open as many accounts as you'd like, - let's start with
             one.
           </ContentBlock>
-          <FormInput type="select">
+          <FormInput className="user-type" type="select">
             <option value="1">Company</option>
             <option value="2">Individual</option>
           </FormInput>
-          <IndividualForm />
+          <IndividualForm className="individual-form" type="form"/>
           <Button big id="continue-button">
             Continue
           </Button>
