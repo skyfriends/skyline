@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import '../css/framework7-icons.css';
 
 import {
@@ -65,10 +65,6 @@ const MainViews = (props, context) => {
       </View>
     </Views>
   );
-};
-
-MainViews.contextTypes = {
-  framework7AppContext: PropTypes.object
 };
 
 export const App = () => (
