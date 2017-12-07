@@ -7,10 +7,18 @@ export const Main = () => {
       <Navbar backLink="Back" sliding />
 
       <List>
-        <ListItem link="#">Portfolio</ListItem>
-        <ListItem link="#">Compare to Market</ListItem>
-        <ListItem link="#">Messages</ListItem>
-        <ListItem link="#">About</ListItem>
+        <ListItem link="#" className="form-list-item">
+          Portfolio
+        </ListItem>
+        <ListItem link="#" className="form-list-item">
+          Compare to Market
+        </ListItem>
+        <ListItem link="#" className="form-list-item">
+          Messages
+        </ListItem>
+        <ListItem link="#" className="form-list-item">
+          About
+        </ListItem>
       </List>
     </Page>
   );

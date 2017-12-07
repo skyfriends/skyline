@@ -72,7 +72,19 @@ class MainViews extends React.Component {
 
           <Pages>
             <Page>
-              <Navbar title="About" backLink="Back" sliding />
+              <Navbar>
+                <NavLeft>
+                  <Link openPanel="left">
+                    <Icon f7="chevron_left" id="nav-back-button" />
+                  </Link>
+                </NavLeft>
+                <NavCenter sliding />
+                <NavRight>
+                  <Link openPanel="right">
+                    <Icon f7="close" id="nav-close-button" />
+                  </Link>{' '}
+                </NavRight>
+              </Navbar>
 
               <img src="https://i.imgur.com/0uFz5SD.png" className="logo-box" />
 
