@@ -52,11 +52,16 @@
   text-align: center;
 }
 
-.list-block input[type=datetime-local], .list-block input[type=email], .list-block input[type=number], .list-block input[type=password], .list-block input[type=search], .list-block input[type=tel], .list-block input[type=text]:focus {
+.list-block input[type='datetime-local'],
+.list-block input[type='email'],
+.list-block input[type='number'],
+.list-block input[type='password'],
+.list-block input[type='search'],
+.list-block input[type='tel'],
+.list-block input[type='text']:focus {
   /* color:transparent; */
   text-shadow: 0 0 0 black;
 }
-
 
 .text-input-label {
   font-size: 1.3em;
@@ -65,8 +70,16 @@
 
 .navbar-inner {
   size: 22;
-  background-color:#e2e5eb;
-  color:black;
+  background-color: #e2e5eb;
+  color: black;
+}
+
+.navbar::after {
+  background-color: #e2e5eb;
+}
+
+.navbar {
+  height: 60px;
 }
 
 .select-input-main > select {
@@ -93,14 +106,16 @@
 }
 
 #nav-back-button {
-  color: #F59F25;
+  color: #f59f25;
   margin-left: 10px;
+  font-size: 2em;
 }
 
 #nav-close-button {
-  color: #F59F25;
+  color: #f59f25;
   font-weight: 600;
   margin-right: 10px;
+  font-size: 2.4em;
 }
 
 #nav-welcome-center {
