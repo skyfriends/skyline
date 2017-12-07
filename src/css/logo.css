@@ -1,6 +1,7 @@
 .logo-container {
   display: inline-block;
-  margin-left: 28px;
+  margin-left: 150px;
+  width:auto;
 }
 
 .logo-circle-upper,
@@ -17,7 +18,7 @@
   /* z-index: -1; */
   margin-left: 15px;
   background-color: #f59f25;
-  padding-right: 60px;
+  /* padding-right: 60px; */
   float: left;
   opacity: 0.7;
 }
@@ -26,7 +27,7 @@
   /* z-index: -1; */
   background-color: #e51c0e;
   margin-top: 16px;
-  padding-left: 60px;
+  /* padding-left: 60px; */
   margin-left: -41px;
   float: left;
   opacity: 0.7;
@@ -36,7 +37,7 @@
   /* z-index: -1; */
   background-color: #ea8aa7;
   margin-top: 32px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   margin-bottom: -25px;
   margin-left: 15px;
   position: absolute;
@@ -59,12 +60,17 @@
 
 /* Container Element */
 .eye-container {
-  /* z-index: 10; */
+  z-index: 10;
   position: absolute;
-  margin-top: 16px;
-  margin-left: 15px;
-  height: 20%;
-  width: 20%;
+  margin-top: 35px;
+  margin-left: 37px;
+  height: 10%;
+  width: 19%;
+}
+
+#logo-eye {
+  height: 1em;
+  width: 1em;
 }
 /* pseudoelements */
 .eye:before,
@@ -76,17 +82,21 @@
   left: 50%;
   opacity: 0;
 }
+
 /* Sclera */
 .eye:before {
-  top: 10%;
-  left: 10%;
+  top: 19%;
+  left: 18%;
   background-color: black;
   width: 80%;
   height: 80%;
 }
 /* Iris */
 .eye:after {
+  /* outline-offset: */
   border: 0.5em solid;
+  /* border-radius:  */
+  outline: 2px solid pink;
   border-color: #5ec2c4;
   width: 40%;
   height: 40%;

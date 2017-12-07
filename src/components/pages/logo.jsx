@@ -15,10 +15,16 @@ import {
   FormLabel,
   ListItem
 } from 'framework7-react'
-import '../../css/logo.css'
 
 export const Logo = () => {
-  return <main className="logo-container">
+  return <div className="logo-container">
+      <div className="logo-circle-upper" />
+      <div className="logo-circle-right" />
+      <div className="logo-circle-lower" />
+      <div className="logo-circle-left" />
+    </div>
+}
+      /* <div className="logo-container">
       <div className="logo-circle-upper">
         <div className="circle-background" />
       </div>
@@ -34,5 +40,4 @@ export const Logo = () => {
       <div className="logo-circle-left">
         <div className="circle-background" />
       </div>
-    </main>
-}
+    </div> */
