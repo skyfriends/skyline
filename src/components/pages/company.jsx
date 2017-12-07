@@ -3,11 +3,11 @@ import {
   Navbar,
   Button,
   Page,
-  FormInput,
-  FormLabel,
+  FormI
   ListItem,
   List,
 } from 'framework7-react';
+import { FormLabel } from 'framework7-react/dist/commonjs/framework7-react/FormLabel';
 
 class Company extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class Company extends React.Component {
   }
 
   handleChecked(e) {
-    this.setState({ checked: e.target.value })
+    this.setState({ checked: e.target.checked })
   }
 
   render() {
@@ -41,7 +41,6 @@ class Company extends React.Component {
         <Navbar title="Company" backLink="Back" sliding />
         <List className form>
           <ListItem>
-            <FormLabel>Company Name</FormLabel>
             <FormInput
               type="text"
               name="companyName"
@@ -52,7 +51,6 @@ class Company extends React.Component {
             />
           </ListItem>
           <ListItem>
-            <FormLabel onChange={this.handleChange}>Business Type</FormLabel>
             <FormInput type="select" className="select-input-main">
               <option value="1">Investment Bank</option>
               <option value="2">Hedge Fund</option>
@@ -63,7 +61,6 @@ class Company extends React.Component {
             </FormInput>
           </ListItem>
           <ListItem>
-            <FormLabel>Company Email: </FormLabel>
             <FormInput
               type="text"
               name="email"
@@ -75,7 +72,6 @@ class Company extends React.Component {
           </ListItem>
 
           <ListItem>
-            <FormLabel>Company Address: </FormLabel>
             <FormInput
               type="text"
               name="address"
@@ -86,7 +82,6 @@ class Company extends React.Component {
           </ListItem>
 
           <ListItem>
-            <FormLabel>Phone Number: </FormLabel>
             <FormInput
               type="text"
               name="phone"
@@ -97,7 +92,6 @@ class Company extends React.Component {
           </ListItem>
 
           <ListItem>
-            <FormLabel>Asset Under Management: </FormLabel>
             <FormInput
               type="text"
               name="asset"
@@ -107,7 +101,6 @@ class Company extends React.Component {
             />
           </ListItem>
           <ListItem>
-            <FormLabel>Password: </FormLabel>
             <FormInput
               type="password"
               name="password"
@@ -116,7 +109,7 @@ class Company extends React.Component {
               value={this.state.password}
             />
           </ListItem>
-
+          <FormLabel>Enable Push Notifications</FormLabel>
           <ListItem
             checkbox
             name="push-notification"
