@@ -1,4 +1,4 @@
-import { Company } from './components/pages/company';
+import Company from './components/pages/company';
 import { Main } from './components/pages/main';
 import { Individual } from './components/pages/individual';
 
