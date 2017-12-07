@@ -36,49 +36,74 @@ import {
 
 import { routes } from '../routes';
 
-const MainViews = (props, context) => {
-  return (
-    <Views>
-      <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
-        <Navbar>
-          <NavLeft>
-            <Link openPanel="left">
-              <Icon f7="chevron_left" size="18px" id="nav-back-button" />
-            </Link>
-          </NavLeft>
-          <NavCenter sliding>Skyline</NavCenter>
-          <NavRight>
-            <Link openPanel="right">
-              <Icon f7="close" size="22px" id="nav-close-button" />
-            </Link>{' '}
-          </NavRight>
-        </Navbar>
+class MainViews extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { userType: '' };
+    this.userSelect = this.userSelect.bind(this);
+  }
 
-        <Pages>
-          <Page>
-            <ContentBlockTitle>Navigation</ContentBlockTitle>
+  userSelect(e) {
+    let userType;
+    e.target.value === '1' ? (userType = 'Company') : (userType = 'Individual');
+    this.setState({ userType });
+  }
+  render() {
+    console.log(this.state);
+    return (
+      <Views>
+        <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
+          <Navbar>
+            <NavLeft>
+              <Link openPanel="left">
+                <Icon f7="chevron_left" size="18px" id="nav-back-button" />
+              </Link>
+            </NavLeft>
+            <NavCenter sliding>Skyline</NavCenter>
+            <NavRight>
+              <Link openPanel="right">
+                <Icon f7="close" size="22px" id="nav-close-button" />
+              </Link>{' '}
+            </NavRight>
+          </Navbar>
 
-            <List>
-              <ListItem link="/company/" title="Company" />
-              <ListItem link="/individual/" title="Individual" />
-              <ListItem link="/main/" title="Main" />
-            </List>
-            <Button
-              big
-              round
-              fill
-              href="/welcome/"
-              title="Welcome"
-              className="bottom-button"
-            >
-              Continue
-            </Button>
-          </Page>
-        </Pages>
-      </View>
-    </Views>
-  );
-};
+          <Pages>
+            <Page>
+              <Navbar title="About" backLink="Back" sliding />
+
+              <ContentBlock className="input-list">
+                <ListItem className="list-item-main">
+                  <FormLabel className="select-input-label" id="user-select">
+                    Select User Type
+                  </FormLabel>
+                  <FormInput
+                    onChange={e => this.userSelect(e)}
+                    className="select-input-main"
+                    type="select"
+                  >
+                    <option value="1">Company</option>
+                    <option value="2">Individual</option>
+                  </FormInput>
+                </ListItem>
+              </ContentBlock>
+              <Button
+                big
+                fill
+                href={
+                  this.state.userType === 'Company' ? '/company' : '/individual'
+                }
+                title="Company"
+                className="bottom-button"
+              >
+                Continue
+              </Button>
+            </Page>
+          </Pages>
+        </View>
+      </Views>
+    );
+  }
+}
 
 export const App = () => (
   <Framework7App themeType="ios" routes={routes}>

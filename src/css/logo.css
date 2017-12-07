@@ -1,32 +1,16 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-body {
-    font-size: 25px;
-    text-align: center;
-    padding-bottom: 400px;
-}
-/* Circle*/
-/* .circle-background {
-  z-index: -1;
-  position: absolute;
-  height: 60px;
-	width: 60px;
-	border-radius:180px;
-  background: white;
-  opacity: 0;
-} */
-
 .logo-container {
   display: inline-block;
-  margin-left:28px;
+  margin-left: 28px;
 }
 
-.logo-circle-upper,.logo-circle-right, .logo-circle-bottom, .logo-circle-left {
+.logo-circle-upper,
+.logo-circle-right,
+.logo-circle-bottom,
+.logo-circle-left {
   position: absolute;
-	height: 100px;
-	width: 100px;
-	border-radius:180px;
+  height: 100px;
+  width: 100px;
+  border-radius: 180px;
 }
 
 .logo-circle-upper {
@@ -35,27 +19,17 @@ body {
   background-color: #f59f25;
   padding-right: 60px;
   float: left;
-  opacity: .7;
+  opacity: 0.7;
 }
-
-/* .logo-circle-right::before {  
-   content: attr(background) 'white';
-  margin-top: 16px;
-  padding-left: 60px;
-  margin-left:-41px;
-  float: left;
-  opacity: 0;
-  
-} */
 
 .logo-circle-right {
   /* z-index: -1; */
   background-color: #e51c0e;
   margin-top: 16px;
   padding-left: 60px;
-  margin-left:-41px;
+  margin-left: -41px;
   float: left;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .logo-circle-bottom {
@@ -63,11 +37,11 @@ body {
   background-color: #ea8aa7;
   margin-top: 32px;
   padding-bottom: 60px;
-  margin-bottom:-25px;
+  margin-bottom: -25px;
   margin-left: 15px;
   position: absolute;
   float: left;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .logo-circle-left {
@@ -75,10 +49,10 @@ body {
   background-color: #5ec2c4;
   padding-right: 60px;
   margin-top: 16px;
-  margin-left:-25px;
+  margin-left: -25px;
   position: absolute;
   float: left;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* Eyeball*/
@@ -93,36 +67,37 @@ body {
   width: 20%;
 }
 /* pseudoelements */
-.eye:before, .eye:after {
-    position: absolute;
-    content: '';
-    display: block;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
+.eye:before,
+.eye:after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
 }
 /* Sclera */
 .eye:before {
-    top: 10%;
-    left: 10%;
-    background-color: black;
-    width: 80%;
-    height: 80%;
+  top: 10%;
+  left: 10%;
+  background-color: black;
+  width: 80%;
+  height: 80%;
 }
 /* Iris */
 .eye:after {
-    border: .5em solid;
-    border-color: #5ec2c4;
-    width: 40%;
-    height: 40%;
-    margin-left: -20%;
-    margin-top: -20%;
+  border: 0.5em solid;
+  border-color: #5ec2c4;
+  width: 40%;
+  height: 40%;
+  margin-left: -20%;
+  margin-top: -20%;
 }
 
 .eye.shaped:after {
-    border-radius: 100%;
-    background-color: black;
-    opacity: 1;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 1;
 }
 
 .eye.shaped:before {
