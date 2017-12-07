@@ -36,6 +36,9 @@ import {
 } from 'framework7-react';
 
 import { routes } from '../routes';
+// logo test
+import { Logo } from './pages/logo'
+import '../css/logo2.css'
 
 class MainViews extends React.Component {
   constructor(props) {
@@ -104,6 +107,7 @@ class MainViews extends React.Component {
                   </FormInput>
                 </ListItem>
               </ContentBlock>
+              <Logo />
               <Button
                 big
                 fill

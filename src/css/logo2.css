@@ -1,67 +1,29 @@
 
-
-.logo-circle {
-	border: 1px solid blue;
-  border-radius: 138px;
+.logo-container {
+  margin-top: 10%;
+  /* display: inline-block; */
+  width: auto;
+  height: auto;
+  border: 2px solid blue;
+  /* width:auto; */
 }
 
-#logo-circle-upper{
-
-}
-#logo-circle-right{
-
-}
-#logo-eye{
-
-}
-#logo-iris{
-
-}
-#logo-pupil{
-
-}
-#logo-circle-bottom{
-
-}
-#logo-circle-left{
-
+.logo-circle-upper, .logo-circle-right, .logo-circle-lower, .logo-circle-left{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%
 }
 
-#logo-eye {
-    position: relative;
-    display: inline-block;
-    width: 10em;
-    height: 10em;
-    color: transparent;
-    /* This line is to show the hitbox for the icon */
-    background-color: #eee;
-    cursor: pointer;
+.logo-circle-upper {
+background-color: #f59f25;
 }
-/* set up pseudoelements */
-#logo-eye:before, #logo-eye:after {
-    position: absolute;
-    content: '';
-    display: block;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-}
-/* Eye Shape */
-#logo-eye:before {
-    /* match the body */
-    top: 10%;
-    left: 10%;
-    background-color: #777;
-    width: 80%;
-    height: 80%;
-}
-/* Pupil */
-#logo-eye:after {
-    /* Match body color here */
-    border: 1em solid;
-    border-color: #fff;
-    width: 40%;
-    height: 40%;
-    margin-left: -20%;
-    margin-top: -20%;
+.logo-circle-right {
+background-color: #e51c0e;
+} 
+.logo-circle-lower {
+background-color: #ea8aa7;
+} 
+.logo-circle-left {
+background-color: #5ec2c4;
 }
