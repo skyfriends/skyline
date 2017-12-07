@@ -16,6 +16,10 @@
   transform: translateX(-50%);
 }
 
+.button.button-fill {
+  background-color: #5ec2c4;
+}
+
 .input-list {
   position: relative;
   top: 25%;

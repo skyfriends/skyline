@@ -1,13 +1,8 @@
-import { Welcome } from './components/pages/welcome';
 import { Company } from './components/pages/company';
 import { Main } from './components/pages/main';
 import { Individual } from './components/pages/individual';
 
 export const routes = [
-  {
-    path: '/welcome/',
-    component: Welcome,
-  },
   {
     path: '/company/',
     component: Company,

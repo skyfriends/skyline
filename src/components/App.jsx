@@ -39,13 +39,15 @@ import { routes } from '../routes';
 class MainViews extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { userType: '' };
+    this.state = { userType: '0' };
     this.userSelect = this.userSelect.bind(this);
   }
 
   userSelect(e) {
     let userType;
-    e.target.value === '1' ? (userType = 'Company') : (userType = 'Individual');
+    e.target.value === '1'
+      ? (userType = 'Company')
+      : e.target.value === '2' ? (userType = 'Individual') : (userType = null);
     this.setState({ userType });
   }
   render() {
@@ -81,6 +83,7 @@ class MainViews extends React.Component {
                     className="select-input-main"
                     type="select"
                   >
+                    <option value="0">Choose User Type</option>
                     <option value="1">Company</option>
                     <option value="2">Individual</option>
                   </FormInput>
@@ -90,7 +93,11 @@ class MainViews extends React.Component {
                 big
                 fill
                 href={
-                  this.state.userType === 'Company' ? '/company' : '/individual'
+                  this.state.userType === 'Company'
+                    ? '/company'
+                    : this.state.userType === 'Individual'
+                      ? '/individual'
+                      : null
                 }
                 title="Company"
                 className="bottom-button"
