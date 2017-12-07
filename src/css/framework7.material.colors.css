@@ -1,0 +1,13 @@
+
+.layout-bg-custom {
+  background-color: #fff;
+}
+
+.color-custom {
+  color: #ec325b;
+}
+
+.theme-custom .button.button-fill {
+   background: #ec325b;
+   color: #fff;
+}

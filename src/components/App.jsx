@@ -58,13 +58,13 @@ class MainViews extends React.Component {
           <Navbar>
             <NavLeft>
               <Link openPanel="left">
-                <Icon f7="chevron_left" size="18px" id="nav-back-button" />
+                <Icon f7="chevron_left" id="nav-back-button" />
               </Link>
             </NavLeft>
             <NavCenter sliding>Skyline</NavCenter>
             <NavRight>
               <Link openPanel="right">
-                <Icon f7="close" size="22px" id="nav-close-button" />
+                <Icon f7="close" id="nav-close-button" />
               </Link>{' '}
             </NavRight>
           </Navbar>
