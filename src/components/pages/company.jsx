@@ -4,10 +4,11 @@ import {
   Button,
   Page,
   FormInput,
-  FormLabel,
   ListItem,
   List,
 } from 'framework7-react';
+import { FormLabel } from 'framework7-react/dist/commonjs/framework7-react/FormLabel';
+import '../../css/app.css'
 
 class Company extends React.Component {
   constructor(props) {
@@ -23,37 +24,34 @@ class Company extends React.Component {
       checked: false
     }
     this.handleChange = this.handleChange.bind(this)
+    this.handleChecked = this.handleChecked.bind(this)
   }
 
   handleChange(e) {
-    console.log('XXXX ', this.state);
     let {name, value} = e.target
     this.setState({ [name]: value })
   }
 
   handleChecked(e) {
-    this.setState({ checked: e.target.value })
+    console.log('this.state ', this.state)
+    console.log('e ', e)
+    if (this.state.checked === false) { 
+      this.setState({checked: e.target.checked === true})
+      e.target.checked = true
+     } else {this.setState({ checked: e.target.checked = false})
+      e.target.checked = false
+    }
   }
 
   render() {
-    return (
-      <Page>
+    return <Page>
         <Navbar title="Company" backLink="Back" sliding />
-        <List className form>
+        <List>
           <ListItem>
-            <FormLabel>Company Name</FormLabel>
-            <FormInput
-              type="text"
-              name="companyName"
-              onChange={this.handleChange}
-              value={this.state.companyName}
-              placeholder="Name"
-              className="text-input-main"
-            />
+            <FormInput type="text" name="companyName" onChange={this.handleChange} value={this.state.companyName} placeholder="Name" />
           </ListItem>
           <ListItem>
-            <FormLabel onChange={this.handleChange}>Business Type</FormLabel>
-            <FormInput type="select" className="select-input-main">
+            <FormInput className="select-input-main" type="select" id="company-select">
               <option value="1">Investment Bank</option>
               <option value="2">Hedge Fund</option>
               <option value="3">Mutual Fund</option>
@@ -63,81 +61,29 @@ class Company extends React.Component {
             </FormInput>
           </ListItem>
           <ListItem>
-            <FormLabel>Company Email: </FormLabel>
-            <FormInput
-              type="text"
-              name="email"
-              placeholder="Email"
-              cursor="none"
-              onChange={this.handleChange}
-              value={this.state.email}
-            />
+            <FormInput type="text" name="email" placeholder="Email" cursor="none" onChange={this.handleChange} value={this.state.email} />
           </ListItem>
 
           <ListItem>
-            <FormLabel>Company Address: </FormLabel>
-            <FormInput
-              type="text"
-              name="address"
-              placeholder="Address"
-              onChange={this.handleChange}
-              value={this.state.address}
-            />
+            <FormInput type="text" name="address" placeholder="Address" onChange={this.handleChange} value={this.state.address} />
           </ListItem>
 
           <ListItem>
-            <FormLabel>Phone Number: </FormLabel>
-            <FormInput
-              type="text"
-              name="phone"
-              placeholder="Phone"
-              onChange={this.handleChange}
-              value={this.state.phone}
-            />
+            <FormInput type="text" name="phone" placeholder="Phone" onChange={this.handleChange} value={this.state.phone} />
           </ListItem>
 
           <ListItem>
-            <FormLabel>Asset Under Management: </FormLabel>
-            <FormInput
-              type="text"
-              name="asset"
-              placeholder="Employment"
-              onChange={this.handleChange}
-              value={this.state.asset}
-            />
+            <FormInput type="text" name="asset" placeholder="Employment" onChange={this.handleChange} value={this.state.asset} />
           </ListItem>
           <ListItem>
-            <FormLabel>Password: </FormLabel>
-            <FormInput
-              type="password"
-              name="password"
-              placeholder="Password"
-              onChange={this.handleChange}
-              value={this.state.password}
-            />
+            <FormInput type="password" name="password" placeholder="Password" onChange={this.handleChange} value={this.state.password} />
           </ListItem>
-
-          <ListItem
-            checkbox
-            name="push-notification"
-            value="1"
-            title="Push Notification: "
-            checked={this.state.checked}
-            onChange={this.handleChecked}
-          />
-
-          <Button
-            big
-            fill
-            href="/main/"
-            title="Company"
-            className="bottom-button"
-          >
+          <ListItem checkbox name="push-notification" value="1" title="Enable Push Notification " checked={this.state.checked} onChange={this.handleChecked} />
+          <Button big fill href="/main/" title="Company" className="bottom-button">
             Continue
           </Button>
         </List>
       </Page>
-    )
   }
 }
 
