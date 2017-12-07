@@ -10,6 +10,7 @@ import {
   Navbar,
   Pages,
   Page,
+  Card,
   ContentBlock,
   ContentBlockTitle,
   List,
@@ -72,6 +73,8 @@ class MainViews extends React.Component {
           <Pages>
             <Page>
               <Navbar title="About" backLink="Back" sliding />
+
+              <img src="https://i.imgur.com/0uFz5SD.png" className="logo-box" />
 
               <ContentBlock className="input-list">
                 <ListItem className="list-item-main">
