@@ -60,7 +60,10 @@
 .list-block input[type='tel'],
 .list-block input[type='text']:focus {
   /* color:transparent; */
-  text-shadow: 0 0 0 black;
+}
+
+.form-list-item {
+  color: #a9a9a9;
 }
 
 .text-input-label {
@@ -105,6 +108,14 @@
   background: #e2e5eb;
 }
 
+.back.link {
+  color: #f59f25;
+}
+
+.icon-back.icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23f59f25'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
 #nav-back-button {
   color: #f59f25;
   margin-left: 10px;
@@ -128,15 +139,6 @@
   border: none;
 }
 
-#continue-button {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: #337be6;
-  color: white;
-  font-weight: 500;
-}
-
 #welcome-header {
   font-size: 2.2em;
   letter-spacing: -1.5px;
@@ -151,6 +153,10 @@
   margin: 0;
 }
 
-#company-select{
+#company-select {
   border: none !important;
+}
+
+#company-select {
+  color: #a9a9a9;
 }
