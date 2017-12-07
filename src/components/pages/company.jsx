@@ -19,6 +19,7 @@ class Company extends React.Component {
       email: '',
       address: '',
       phone: '',
+      employees: '',
       asset: '',
       password: '',
       checked: false
@@ -73,8 +74,12 @@ class Company extends React.Component {
           </ListItem>
 
           <ListItem>
-            <FormInput type="text" name="asset" placeholder="Employment" onChange={this.handleChange} value={this.state.asset} />
+            <FormInput type="text" name="employees" placeholder="Number of Employees" onChange={this.handleChange} value={this.state.asset} />
           </ListItem>
+          <ListItem>
+            <FormInput type="text" name="asset" placeholder="Asset Under Management" onChange={this.handleChange} value={this.state.asset} />
+          </ListItem>
+
           <ListItem>
             <FormInput type="password" name="password" placeholder="Password" onChange={this.handleChange} value={this.state.password} />
           </ListItem>
