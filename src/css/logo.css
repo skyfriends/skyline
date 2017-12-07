@@ -1,5 +1,3 @@
-/* Eyeball*/
-
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -8,19 +6,93 @@ body {
     text-align: center;
     padding-bottom: 400px;
 }
+/* Circle*/
+/* .circle-background {
+  z-index: -1;
+  position: absolute;
+  height: 60px;
+	width: 60px;
+	border-radius:180px;
+  background: white;
+  opacity: 0;
+} */
+
+.logo-container {
+  display: inline-block;
+  margin-left:28px;
+}
+
+.logo-circle-upper,.logo-circle-right, .logo-circle-bottom, .logo-circle-left {
+  position: absolute;
+	height: 100px;
+	width: 100px;
+	border-radius:180px;
+}
+
+.logo-circle-upper {
+  /* z-index: -1; */
+  margin-left: 15px;
+  background-color: #f59f25;
+  padding-right: 60px;
+  float: left;
+  opacity: .7;
+}
+
+/* .logo-circle-right::before {  
+   content: attr(background) 'white';
+  margin-top: 16px;
+  padding-left: 60px;
+  margin-left:-41px;
+  float: left;
+  opacity: 0;
+  
+} */
+
+.logo-circle-right {
+  /* z-index: -1; */
+  background-color: #e51c0e;
+  margin-top: 16px;
+  padding-left: 60px;
+  margin-left:-41px;
+  float: left;
+  opacity: .7;
+}
+
+.logo-circle-bottom {
+  /* z-index: -1; */
+  background-color: #ea8aa7;
+  margin-top: 32px;
+  padding-bottom: 60px;
+  margin-bottom:-25px;
+  margin-left: 15px;
+  position: absolute;
+  float: left;
+  opacity: .7;
+}
+
+.logo-circle-left {
+  /* z-index: -1; */
+  background-color: #5ec2c4;
+  padding-right: 60px;
+  margin-top: 16px;
+  margin-left:-25px;
+  position: absolute;
+  float: left;
+  opacity: .7;
+}
+
+/* Eyeball*/
 
 /* Container Element */
-.eye {
-    position: relative;
-    display: inline-block;
-    width: 10em;
-    height: 10em;
-    color: transparent;
-    /* This line is to show the hitbox for the icon */
-    background-color: #e2e5eb;
-    cursor: pointer;
+.eye-container {
+  /* z-index: 10; */
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 15px;
+  height: 20%;
+  width: 20%;
 }
-/* set up pseudoelements */
+/* pseudoelements */
 .eye:before, .eye:after {
     position: absolute;
     content: '';
@@ -29,19 +101,17 @@ body {
     left: 50%;
     opacity: 0;
 }
-/* Eye Shape */
+/* Sclera */
 .eye:before {
-    /* match the body */
     top: 10%;
     left: 10%;
-    background-color: #777;
+    background-color: black;
     width: 80%;
     height: 80%;
 }
 /* Iris */
 .eye:after {
-    /* Match body color here */
-    border: 1em solid;
+    border: .5em solid;
     border-color: #5ec2c4;
     width: 40%;
     height: 40%;
@@ -51,27 +121,13 @@ body {
 
 .eye.shaped:after {
     border-radius: 100%;
+    background-color: black;
     opacity: 1;
 }
 
 .eye.shaped:before {
   background-color: white;
-    border-radius: 0 80% 0 80%;
-    transform: rotate(-45deg);
-    opacity: 1;
-}
-
-/* Circle*/
-
-.logo-circle {
-  	height: 60px;
-	width: 60px;
-	border-radius:180px;
-	-khtml-border-radius:180px;
-	-moz-border-radius:180px;		
-	-webkit-border-radius:180px;
-	border: 1px solid #000;
-	display: table;
-	float: left;
-	opacity: .6;
+  border-radius: 0 80% 0 80%;
+  transform: rotate(-45deg);
+  opacity: 1;
 }

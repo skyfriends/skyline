@@ -19,14 +19,20 @@ import '../../css/logo.css'
 
 export const Logo = () => {
   return <main className="logo-container">
-      {/* <div className="logo-circle" id="logo-circle-upper" /> */}
-      <div className="logo-circle" id="logo-circle-right" />
-      <div className="eye shaped" id="logo-eye" />
-      <div className="hitbox-tooltip" id="logo-hit" />
-      <div className="before tooltip" id="logo-pupil" />
-      <div className="after tooltip" id="logo-after" />
-
-      {/* <div className="logo-circle" id="logo-circle-bottom" />
-      <div className="logo-circle" id="logo-circle-left" /> */}
+      <div className="logo-circle-upper">
+        <div className="circle-background" />
+      </div>
+      <div className="logo-circle-right">
+        <div className="circle-background" />
+      </div>
+      <div className="eye-container">
+        <div className="eye shaped" id="logo-eye" />
+      </div>
+      <div className="logo-circle-bottom">
+        <div className="circle-background" />
+      </div>
+      <div className="logo-circle-left">
+        <div className="circle-background" />
+      </div>
     </main>
 }

@@ -9,6 +9,6 @@ import { Individual } from './pages/individual-form';
 
 export const App = () => (
   <Framework7App themeType="ios" routes={routes}>
-    <Individual />
+    <MainView />
   </Framework7App>
 );

@@ -17,6 +17,7 @@ import {
 } from 'framework7-react';
 import { Logo } from './logo'
 import '../../css/app.css'
+
 export const MainView = () => {
   return (
     <Views>
