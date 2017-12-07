@@ -1,7 +1,7 @@
-import { Welcome } from './components/pages/Welcome';
-import { Company } from './components/pages/company-form';
+import { Welcome } from './components/pages/welcome';
+import { Company } from './components/pages/company';
 import { Main } from './components/pages/main';
-import { Individual } from './components/pages/individual-form';
+import { Individual } from './components/pages/individual';
 
 export const routes = [
   {

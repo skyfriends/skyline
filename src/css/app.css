@@ -4,6 +4,12 @@
   height: 100%;
 }
 
+.bottom-button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 .page-content {
   background: #e2e5eb;
 }
