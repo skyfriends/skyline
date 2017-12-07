@@ -2,6 +2,18 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.logo-box {
+  z-index: 9999;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  transform: translateX(-50%);
+
+  left: 50%;
+  margin-top: 15%;
+}
+
 .list-item-main {
   list-style: none;
   text-align: center;
@@ -19,7 +31,7 @@
 
 .input-list {
   position: relative;
-  top: 25%;
+  top: 10%;
 }
 
 .text-input-main > input {
