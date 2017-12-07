@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Framework7 Icons';
   font-style: normal;
+  font-color: #f59f25;
   font-weight: 400;
   src: url('./fonts/Framework7Icons-Regular.eot');
   src: url('./fonts/Framework7Icons-Regular.woff2') format('woff2'),
