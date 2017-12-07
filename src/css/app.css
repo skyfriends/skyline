@@ -13,6 +13,11 @@
   bottom: 0;
 }
 
+.input-list {
+  position: relative;
+  top: 25%;
+}
+
 .text-input-main > input {
   line-height: 42px;
   border: 1px solid #b2b2b2;
@@ -31,6 +36,17 @@
 }
 
 .text-input-label {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.select-input-main > select {
+  border: 1px solid #b2b2b2;
+  height: 48px;
+  width: 80%;
+}
+
+.select-input-label {
   font-size: 1.3em;
   text-decoration: none;
 }
