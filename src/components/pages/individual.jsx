@@ -11,11 +11,11 @@ import {
 export const Individual = () => {
   return (
     <Page>
-      <Navbar title="About" backLink="Back" sliding />
+      <Navbar title="Individual" backLink="Back" sliding />
       <List className form>
         <ListItem>
           <FormLabel>Email: </FormLabel>
-          <FormInput type="text" placeholder="Email" />
+          <FormInput type="text" placeholder="Email" cursor="none" />
         </ListItem>
 
         <ListItem>

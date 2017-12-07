@@ -9,11 +9,8 @@
 
 .bottom-button {
   width: 100%;
-  position: fixed;
-  left: 50%;
+  position: absolute;
   bottom: 0;
-  border-radius: 0px;
-  transform: translateX(-50%);
 }
 
 .input-list {
@@ -38,15 +35,31 @@
   text-align: center;
 }
 
+.list-block input[type=datetime-local], .list-block input[type=email], .list-block input[type=number], .list-block input[type=password], .list-block input[type=search], .list-block input[type=tel], .list-block input[type=text]:focus {
+  /* color:transparent; */
+  text-shadow: 0 0 0 black;
+}
+
+
 .text-input-label {
   font-size: 1.3em;
   text-decoration: none;
 }
 
+.navbar-inner {
+  size: 22;
+  background-color:#e2e5eb;
+  color:#5EC2C4;
+}
+
 .select-input-main > select {
   border: 1px solid #b2b2b2;
   height: 48px;
-  width: 80%;
+  width: 75%;
+}
+
+.button.button-fill {
+  background-color: '#5EC2C4';
 }
 
 .select-input-label {
@@ -63,12 +76,12 @@
 }
 
 #nav-back-button {
-  color: black;
+  color: #F59F25;
   margin-left: 10px;
 }
 
 #nav-close-button {
-  color: black;
+  color: #F59F25;
   font-weight: 600;
   margin-right: 10px;
 }
@@ -89,7 +102,6 @@
   bottom: 0;
   background-color: #337be6;
   color: white;
-  border-radius: 0;
   font-weight: 500;
 }
 
