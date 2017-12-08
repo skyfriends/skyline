@@ -25,6 +25,7 @@ class Individual extends React.Component {
     };
     this.handleChecked = this.handleChecked.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handlePhoneChange = this.handlePhoneChange.bind(this);
   }
 
   handleChecked(e) {
@@ -42,6 +43,20 @@ class Individual extends React.Component {
   handleChange(e) {
     let { name, value } = e.target;
     this.setState({ [name]: value });
+  }
+
+  handlePhoneChange(e) {
+    let x = e.target.value
+      .replace(/\D/g, '')
+      .match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = !x[2]
+      ? x[1]
+      : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+
+    let checkedPhone = e.target.value;
+    console.log(checkedPhone);
+
+    this.setState({ phone: checkedPhone });
   }
 
   render() {
@@ -65,6 +80,8 @@ class Individual extends React.Component {
               name="email"
               placeholder="Email"
               cursor="none"
+              onChange={this.handleChange}
+              value={this.state.email}
             />
           </ListItem>
 
@@ -83,7 +100,7 @@ class Individual extends React.Component {
               type="text"
               name="phone"
               placeholder="Phone"
-              onChange={this.handleChange}
+              onChange={this.handlePhoneChange}
               value={this.state.phone}
             />
           </ListItem>

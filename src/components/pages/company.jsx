@@ -20,12 +20,12 @@ class Company extends React.Component {
       address: '',
       phone: '',
       employees: '',
-      asset: '',
       password: '',
       checked: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleChecked = this.handleChecked.bind(this);
+    this.handlePhoneChange = this.handlePhoneChange.bind(this);
   }
 
   handleChange(e) {
@@ -33,9 +33,21 @@ class Company extends React.Component {
     this.setState({ [name]: value });
   }
 
+  handlePhoneChange(e) {
+    let x = e.target.value
+      .replace(/\D/g, '')
+      .match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = !x[2]
+      ? x[1]
+      : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+
+    let checkedPhone = e.target.value;
+    console.log(checkedPhone);
+
+    this.setState({ phone: checkedPhone });
+  }
+
   handleChecked(e) {
-    console.log('this.state ', this.state);
-    console.log('e ', e);
     if (this.state.checked === false) {
       this.setState({ checked: e.target.checked === true });
       e.target.checked = true;
@@ -99,7 +111,7 @@ class Company extends React.Component {
               type="text"
               name="phone"
               placeholder="Phone"
-              onChange={this.handleChange}
+              onChange={this.handlePhoneChange}
               value={this.state.phone}
             />
           </ListItem>
@@ -110,7 +122,7 @@ class Company extends React.Component {
               name="employees"
               placeholder="Number of Employees"
               onChange={this.handleChange}
-              value={this.state.asset}
+              value={this.state.employees}
             />
           </ListItem>
           <ListItem className="form-list-item">
