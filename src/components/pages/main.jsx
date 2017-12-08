@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, List, ListItem, Page } from 'framework7-react';
+import '../../css/logo2.css'
+import { Logo } from './logo'
 
 export const Main = () => {
   return (
@@ -20,6 +22,7 @@ export const Main = () => {
           About
         </ListItem>
       </List>
+      <Logo />
     </Page>
   );
 };
