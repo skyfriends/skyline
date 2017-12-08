@@ -37,8 +37,7 @@ import {
 
 import { routes } from '../routes';
 // logo test
-import { Logo } from './pages/logo'
-import '../css/logo2.css'
+import { Logo } from './pages/logo';
 
 class MainViews extends React.Component {
   constructor(props) {

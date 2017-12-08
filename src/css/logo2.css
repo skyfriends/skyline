@@ -1,29 +1,117 @@
-
 .logo-container {
+  position: absolute;
+  padding-top: 50px;
   margin-top: 10%;
-  /* display: inline-block; */
+  display: block;
   width: auto;
   height: auto;
   border: 2px solid blue;
+  clear:both;
   /* width:auto; */
 }
 
-.logo-circle-upper, .logo-circle-right, .logo-circle-lower, .logo-circle-left{
-  display: inline-block;
+.logo-circles{
+  /* border: 1px solid blue; */
+  /* position: absolute; */
+  float: left;
+  /* display: inline-block; */
   width: 100px;
   height: 100px;
-  border-radius: 50%
+  border-radius: 50%;
+  opacity: .6;
+  /* position: relative; */
 }
 
-.logo-circle-upper {
+#logo-circle-upper {
 background-color: #f59f25;
+margin-left: -60px;
+margin-right: -60px;
+/* left: 100px; */
 }
-.logo-circle-right {
+#logo-circle-right {
 background-color: #e51c0e;
+margin-top: 25px;
+margin-left: -25px;
 } 
-.logo-circle-lower {
+#logo-circle-lower {  
 background-color: #ea8aa7;
+margin-top: 55px;
+margin-left: -133px;
 } 
-.logo-circle-left {
-background-color: #5ec2c4;
+#logo-circle-left {
+  background-color: #5ec2c4;
+  margin-top: 25px;
+  margin-right: -10px;
 }
+
+.eye-container {
+  /* border: 1px solid blue; */
+  z-index: 10;
+  position: absolute;
+  height: 28%;
+  width: 36%;
+  margin-top: 49px;
+  margin-left: 52px;
+  background-color: white;
+  border-radius: 0 80% 0 80%;
+  transform: rotate(-45deg);
+  opacity: 1;
+  /* text-align: center; */
+}
+
+#sclera {
+  /* width: inherit;
+  height: inherit; */
+  z-index: 9;
+  /* height: 50px;
+  width: 50px; */
+  /* position: absolute; */
+  margin-left: 32px;
+  /* padding-bottom: 61px; */
+  transform: rotate(45deg)
+}
+
+#iris {
+  /* text-align: center; */
+  position: relative;
+  right: 27px;
+  top: 16px;
+  height: 45px;
+  width: 45px;
+  /* transform: rotate(45deg); */
+  margin-left:12px;
+  /* margin-top: 17px; */
+  background-color:#5ec2c4;
+  border-radius: 50%;
+  
+}
+
+#pupil {
+  z-index: 99999;
+  position: absolute;
+  margin-top: 10px;
+  left: 13px;
+  top: 2px;
+  height: 20px;
+  width: 20px;
+  background: black;
+  /* margin-left: 20px;
+  margin-top: 10px; */
+  border-radius: 50%;
+  /* box-shadow: inset 0 0 10px #5ec2c4; */
+}
+
+#pupil:after {
+  z-index: 909090909;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 1;
+}
+
+/* #pupil:before {
+  background-color: black ;
+  border-radius: 0 80% 0 80%;
+  transform: rotate(-45deg);
+  opacity: 1;
+} */
+
