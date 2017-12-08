@@ -2,6 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.user-login {
+  margin-top: 90%;
+}
+
 .logo-box {
   z-index: 9999;
   width: 100px;
@@ -93,7 +97,6 @@
   border: 1px solid #b2b2b2;
   height: 48px;
   width: 75%;
-
 }
 
 .button.button-fill {
