@@ -62,6 +62,10 @@
   /* color:transparent; */
 }
 
+#user-dropdown {
+  margin-top: 80%;
+}
+
 .form-list-item {
   color: #a9a9a9;
 }
@@ -89,6 +93,7 @@
   border: 1px solid #b2b2b2;
   height: 48px;
   width: 75%;
+
 }
 
 .button.button-fill {

@@ -55,8 +55,7 @@ class MainViews extends React.Component {
   }
   render() {
     console.log(this.state);
-    return (
-      <Views>
+    return <Views>
         <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
           <Navbar>
             <NavLeft>
@@ -88,45 +87,27 @@ class MainViews extends React.Component {
                 </NavRight>
               </Navbar>
 
-              <img src="https://i.imgur.com/0uFz5SD.png" className="logo-box" />
-
-              <ContentBlock className="input-list">
+              <Logo />
+              <ContentBlock id="user-dropdown" className="input-list">
                 <ListItem className="list-item-main">
                   <FormLabel className="select-input-label" id="user-select">
                     Select User Type
                   </FormLabel>
-                  <FormInput
-                    onChange={e => this.userSelect(e)}
-                    className="select-input-main"
-                    type="select"
-                  >
+                  <FormInput onChange={e => this.userSelect(e)} className="select-input-main" type="select">
                     <option value="0">Choose User Type</option>
                     <option value="1">Company</option>
                     <option value="2">Individual</option>
                   </FormInput>
                 </ListItem>
               </ContentBlock>
-              <Logo />
-              <Button
-                big
-                fill
-                href={
-                  this.state.userType === 'Company'
-                    ? '/company'
-                    : this.state.userType === 'Individual'
-                      ? '/individual'
-                      : null
-                }
-                title="Company"
-                className="bottom-button"
-              >
+
+              <Button big fill href={this.state.userType === 'Company' ? '/company' : this.state.userType === 'Individual' ? '/individual' : null} title="Company" className="bottom-button">
                 Continue
               </Button>
             </Page>
           </Pages>
         </View>
       </Views>
-    );
   }
 }
 

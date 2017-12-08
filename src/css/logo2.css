@@ -2,10 +2,10 @@
   position: absolute;
   padding-top: 50px;
   margin-top: 10%;
+  left: 25%;
   display: block;
   width: auto;
   height: auto;
-  border: 2px solid blue;
   clear:both;
   /* width:auto; */
 }
