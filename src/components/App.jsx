@@ -69,8 +69,13 @@ class Login extends React.Component {
                 </NavRight>
               </Navbar>
               <Logo />
-
               <List className="user-login">
+                <ListItem id="welcome-list-header">
+                  <ContentBlock className="welcome-header">
+                    WELCOME
+                  </ContentBlock>
+                </ListItem>
+
                 <ListItem className="form-list-item">
                   <FormInput
                     placeholder="Username"

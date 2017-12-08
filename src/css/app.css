@@ -3,7 +3,27 @@
 }
 
 .user-login {
-  margin-top: 90%;
+  margin-top: 80%;
+}
+
+.item-content {
+  border: 1px solid #e2e5eb;
+}
+
+#welcome-list-header {
+  background-color: #e2e5eb;
+  border: none;
+  text-align: center;
+}
+
+.welcome-header {
+  display: block;
+  position: relative;
+  top: 0;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin: 0 auto;
 }
 
 .logo-box {
