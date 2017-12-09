@@ -73,20 +73,6 @@ class Login extends React.Component {
                   </Link>{' '}
                 </NavRight>
               </Navbar>
-<<<<<<< HEAD
-              {/* <Logo /> */}
-              <Corner />
-              <ContentBlock id="user-dropdown" className="input-list">
-                <ListItem className="list-item-main">
-                  <FormLabel className="select-input-label" id="user-select">
-                    Select User Type
-                  </FormLabel>
-                  <FormInput onChange={e => this.userSelect(e)} className="select-input-main" type="select">
-                    <option value="0">Choose User Type</option>
-                    <option value="1">Company</option>
-                    <option value="2">Individual</option>
-                  </FormInput>
-=======
               <Logo />
               <List className="user-login">
                 <ListItem id="welcome-list-header">
@@ -110,7 +96,6 @@ class Login extends React.Component {
                     className="select-input-main"
                     type="text"
                   />
->>>>>>> cc8e8767f44a71ba419ea4fc24772bf9b6850cc9
                 </ListItem>
               </List>
 
