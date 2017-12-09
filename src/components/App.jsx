@@ -22,14 +22,9 @@ import {
   ContentBlock
 } from 'framework7-react';
 import { Logo } from './pages/logo';
-<<<<<<< HEAD
-import { Corner } from './pages/corner'
-class MainViews extends React.Component {
-=======
 import { routes } from '../routes';
 
 class Login extends React.Component {
->>>>>>> cc8e8767f44a71ba419ea4fc24772bf9b6850cc9
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
