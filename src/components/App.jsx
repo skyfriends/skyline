@@ -70,7 +70,7 @@ class Login extends React.Component {
                 </NavRight>
               </Navbar>
               <Logo />
-              <List className="user-login">
+              <List className="user-login no-hairlines no-hairlines-between">
                 <ListItem id="welcome-list-header">
                   <ContentBlock className="welcome-header">
                     WELCOME
