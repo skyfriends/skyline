@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/framework7-icons.css';
 import '../css/app.css';
+import '../css/corner.css'
 import {
   Framework7App,
   Statusbar,
@@ -23,6 +24,7 @@ import {
 } from 'framework7-react';
 import { Logo } from './pages/logo';
 import { routes } from '../routes';
+import { Corner } from './pages/corner.jsx'
 
 class Login extends React.Component {
   constructor(props) {
@@ -36,8 +38,7 @@ class Login extends React.Component {
   }
 
   render() {
-    return (
-      <Views>
+    return <Views>
         <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
           <Navbar>
             <NavLeft>
@@ -52,7 +53,7 @@ class Login extends React.Component {
               </Link>{' '}
             </NavRight>
           </Navbar>
-
+          <Corner />
           <Pages>
             <Page>
               <Navbar>
@@ -77,37 +78,20 @@ class Login extends React.Component {
                 </ListItem>
 
                 <ListItem className="form-list-item">
-                  <FormInput
-                    placeholder="Username"
-                    onChange={e => this.userSelect(e)}
-                    className="select-input-main"
-                    type="text"
-                  />
+                  <FormInput placeholder="Username" onChange={e => this.userSelect(e)} className="select-input-main" type="text" />
                 </ListItem>
                 <ListItem className="form-list-item">
-                  <FormInput
-                    placeholder="Password"
-                    onChange={e => this.userSelect(e)}
-                    className="select-input-main"
-                    type="text"
-                  />
+                  <FormInput placeholder="Password" onChange={e => this.userSelect(e)} className="select-input-main" type="text" />
                 </ListItem>
               </List>
 
-              <Button
-                big
-                fill
-                href="/user/"
-                title="Company"
-                className="bottom-button"
-              >
+              <Button big fill href="/user/" title="Company" className="bottom-button">
                 Continue
               </Button>
             </Page>
           </Pages>
         </View>
       </Views>
-    );
   }
 }
 

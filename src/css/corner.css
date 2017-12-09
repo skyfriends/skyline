@@ -15,6 +15,7 @@
 }
 
 main {
+  z-index: 1;
   position: absolute;
   margin-left: 42%;
 }
@@ -38,7 +39,6 @@ main {
   border-top: 24px solid transparent;
   border-right: 48px solid #6ec7c4;
   border-left: 0px solid transparent;
-
 }
 
 #triangle2 {
@@ -59,28 +59,10 @@ main {
   border-bottom: 132px solid transparent;
 }
 
-#triangle33 {
-  	/* width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 100px solid red;
-	border-bottom: 50px solid transparent; */
-
-  /* z-index: 6;
-  margin-top: 16px;
-  margin-left: 100px;
-  border-bottom: 16px solid transparent;
-  border-top: 80px solid transparent;
-  border-left: 100px solid red;
-  border-right: 62px solid transparent; */
-}
-
-
 #triangle4 {
   z-index: 3;
-  margin-top: 16px;
-  margin-left: 160px;
+  margin-left: 153px;
   border-bottom: 175px solid transparent;
   border-top: 0px solid transparent;
-  border-right: 60px solid #cdce94;
+  border-right: 67px solid #cdce94;
 }

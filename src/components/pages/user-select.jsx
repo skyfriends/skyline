@@ -55,7 +55,6 @@ class UserSelect extends React.Component {
     return (
       <Page>
         <Navbar backLink="Back" sliding />
-
         <Logo />
         <ContentBlock id="user-dropdown" className="input-list">
           <ListItem className="list-item-main">
