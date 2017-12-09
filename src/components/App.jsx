@@ -38,7 +38,7 @@ import {
 import { routes } from '../routes';
 // logo test
 import { Logo } from './pages/logo';
-
+import { Corner } from './pages/corner'
 class MainViews extends React.Component {
   constructor(props) {
     super(props);
@@ -86,8 +86,8 @@ class MainViews extends React.Component {
                   </Link>{' '}
                 </NavRight>
               </Navbar>
-
-              <Logo />
+              {/* <Logo /> */}
+              <Corner />
               <ContentBlock id="user-dropdown" className="input-list">
                 <ListItem className="list-item-main">
                   <FormLabel className="select-input-label" id="user-select">
