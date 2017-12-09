@@ -2,15 +2,15 @@
   position: absolute;
   padding-top: 50px;
   margin-top: 10%;
-  left: 25%;
+  left: 30%;
   display: block;
   width: auto;
   height: auto;
-  clear:both;
+  clear: both;
   /* width:auto; */
 }
 
-.logo-circles{
+.logo-circles {
   /* border: 1px solid blue; */
   /* position: absolute; */
   float: left;
@@ -18,26 +18,26 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  opacity: .6;
+  opacity: 0.6;
   /* position: relative; */
 }
 
 #logo-circle-upper {
-background-color: #f59f25;
-margin-left: -60px;
-margin-right: -60px;
-/* left: 100px; */
+  background-color: #f59f25;
+  margin-left: -60px;
+  margin-right: -60px;
+  /* left: 100px; */
 }
 #logo-circle-right {
-background-color: #e51c0e;
-margin-top: 25px;
-margin-left: -25px;
-} 
-#logo-circle-lower {  
-background-color: #ea8aa7;
-margin-top: 55px;
-margin-left: -133px;
-} 
+  background-color: #e51c0e;
+  margin-top: 25px;
+  margin-left: -25px;
+}
+#logo-circle-lower {
+  background-color: #ea8aa7;
+  margin-top: 55px;
+  margin-left: -133px;
+}
 #logo-circle-left {
   background-color: #5ec2c4;
   margin-top: 25px;
@@ -68,7 +68,7 @@ margin-left: -133px;
   /* position: absolute; */
   margin-left: 32px;
   /* padding-bottom: 61px; */
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 #iris {
@@ -79,11 +79,10 @@ margin-left: -133px;
   height: 45px;
   width: 45px;
   /* transform: rotate(45deg); */
-  margin-left:12px;
+  margin-left: 12px;
   /* margin-top: 17px; */
-  background-color:#5ec2c4;
+  background-color: #5ec2c4;
   border-radius: 50%;
-  
 }
 
 #pupil {
@@ -114,4 +113,3 @@ margin-left: -133px;
   transform: rotate(-45deg);
   opacity: 1;
 } */
-

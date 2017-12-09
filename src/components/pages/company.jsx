@@ -7,7 +7,6 @@ import {
   ListItem,
   List
 } from 'framework7-react';
-import { FormLabel } from 'framework7-react/dist/commonjs/framework7-react/FormLabel';
 import '../../css/app.css';
 
 class Company extends React.Component {
