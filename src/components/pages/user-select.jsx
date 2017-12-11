@@ -3,36 +3,13 @@ import '../../css/framework7-icons.css';
 import '../../css/app.css';
 
 import {
-  Framework7App,
-  Statusbar,
-  Panel,
-  View,
   Navbar,
-  Pages,
   Page,
-  Card,
   ContentBlock,
-  ContentBlockTitle,
-  List,
   ListItem,
-  Views,
-  NavLeft,
-  Link,
-  NavCenter,
-  NavRight,
-  GridRow,
-  GridCol,
   Button,
-  Popup,
-  LoginScreen,
-  LoginScreenTitle,
-  ListButton,
-  ListLabel,
   FormLabel,
-  FormInput,
-  Icon,
-  Swiper,
-  SwiperSlide
+  FormInput
 } from 'framework7-react';
 import { Logo } from './logo';
 
