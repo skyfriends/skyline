@@ -92,9 +92,8 @@
   border-radius: 27px;
   margin-left: 10%;
   margin-right: 10%;
-  position: absolute;
   width: 80%;
-  bottom: 14%;
+  margin-top: 20%;
 }
 
 .button.button-fill {
@@ -142,7 +141,7 @@
 }
 
 #user-dropdown {
-  margin-top:65%;
+  margin-top: 65%;
 }
 
 .form-list-item {
@@ -281,7 +280,7 @@
 }
 
 #no-account {
-  margin-top: 33%;
+  margin-top: 7%;
   /* width: 120px; */
   padding-left: 34%;
   padding-right: 34%;
@@ -323,15 +322,15 @@
 }
 
 .input-form-list-item {
-background: #e2e5eb;
-width: 100%;
+  background: #e2e5eb;
+  width: 100%;
 }
 
-.input-form-list ul{
-width: 100%;
+.input-form-list ul {
+  width: 100%;
 }
 
-.input-form-list .item-content{
+.input-form-list .item-content {
   background: white;
   border-radius: 0;
 }
