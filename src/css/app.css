@@ -88,10 +88,6 @@
 .list-block input[type='text']:focus {
   /* color:transparent; */
 }
-.list-block li {
-  outline: 3px solid #e2e5eb;
-  outline-offset: -3.9px;
-}
 
 #user-dropdown {
   margin-top: 80%;
@@ -99,7 +95,7 @@
 
 .form-list-item {
   color: #a9a9a9;
-  border-radius: 15px;
+  border: none !important;
 }
 
 .list-block ul {
@@ -250,6 +246,7 @@
   border-radius: 15px;
 }
 .item-content {
+  border-radius: 15px;
   background-color: #e2e5eb;
 }
 
