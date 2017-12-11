@@ -5,7 +5,8 @@ import {
   Page,
   FormInput,
   ListItem,
-  List
+  List,
+  ContentBlock
 } from 'framework7-react';
 import '../../css/app.css';
 
@@ -25,54 +26,83 @@ class CreateAccount extends React.Component {
     return (
       <Page>
         <Navbar title="Company" backLink="Back" sliding />
-        <List>
-          <ListItem>
-            <FormInput
-              type="text"
-              name="firstName"
-              onChange={this.handleChange}
-              value={this.state.firstName}
-              placeholder="Name"
-            />
+        <List className="user-create no-hairlines-between no-hairlines">
+          <ListItem id="welcome-list-header">
+            <ContentBlock className="welcome-header">
+              CREATE NEW ACCOUNT
+            </ContentBlock>
           </ListItem>
-          <ListItem>
-            <FormInput
-              type="text"
-              name="firstName"
-              onChange={this.handleChange}
-              value={this.state.firstName}
-              placeholder="Name"
-            />
-          </ListItem>
-          <ListItem>
-            <FormInput
-              type="text"
-              name="firstName"
-              onChange={this.handleChange}
-              value={this.state.firstName}
-              placeholder="Name"
-            />
-          </ListItem>
-          <ListItem>
-            <FormInput
-              type="text"
-              name="firstName"
-              onChange={this.handleChange}
-              value={this.state.firstName}
-              placeholder="Name"
-            />
-          </ListItem>
-
-          <Button
-            big
-            fill
-            href="/main/"
-            title="Company"
-            className="bottom-button"
+          <div
+            className="form-inner-container"
+            id="username-form-inner-container"
           >
-            Continue
-          </Button>
+            <ListItem className="form-list-item">
+              <FormInput
+                placeholder="First Name"
+                className="select-input-main"
+                type="text"
+              />
+            </ListItem>
+          </div>
+          <div
+            className="form-inner-container"
+            id="password-form-inner-container"
+          >
+            <ListItem className="form-list-item">
+              <FormInput
+                placeholder="Last Name"
+                className="select-input-main"
+                type="text"
+              />
+            </ListItem>
+          </div>
+          <div
+            className="form-inner-container"
+            id="password-form-inner-container"
+          >
+            <ListItem className="form-list-item">
+              <FormInput
+                placeholder="Username"
+                className="select-input-main"
+                type="text"
+              />
+            </ListItem>
+          </div>
+          <div
+            className="form-inner-container"
+            id="password-form-inner-container"
+          >
+            <ListItem className="form-list-item">
+              <FormInput
+                placeholder="Email Address"
+                className="select-input-main"
+                type="text"
+              />
+            </ListItem>
+          </div>
+          <div
+            className="form-inner-container"
+            id="password-form-inner-container"
+          >
+            <ListItem className="form-list-item">
+              <FormInput
+                placeholder="Password"
+                className="select-input-main"
+                type="text"
+              />
+            </ListItem>
+          </div>
         </List>
+
+        <Button
+          big
+          fill
+          href="/main/"
+          title="Company"
+          className="bottom-button"
+        >
+          Continue
+        </Button>
       </Page>
     );
   }
