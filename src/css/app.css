@@ -4,6 +4,7 @@
 
 .user-login {
   margin-top: 80%;
+  margin-bottom: 10px;
 }
 
 .item-content {
@@ -45,7 +46,7 @@
 
 .bottom-button {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
@@ -85,6 +86,10 @@
 .list-block input[type='text']:focus {
   /* color:transparent; */
 }
+.list-block li{
+  outline: 3px solid #e2e5eb;
+  outline-offset: -3.9px;
+}
 
 #user-dropdown {
   margin-top: 80%;
@@ -92,6 +97,13 @@
 
 .form-list-item {
   color: #a9a9a9;
+  border-radius: 15px;
+}
+
+.list-block ul {
+  margin: auto;
+  justify-content: center;
+  width: 80%;
 }
 
 .text-input-label {
@@ -187,4 +199,32 @@
 
 #company-select {
   color: #a9a9a9;
+}
+
+.login-text {
+  margin: auto;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+}
+
+#forgot-password {
+  float: right;
+  margin-bottom: 20px;
+}
+
+#no-account, #create-account {
+  text-align: center;
+}
+
+#no-account {
+  width: 120px;
+}
+
+#create-account {
+  color: #f59f25;
+}
+
+.item-content {
+  border-radius: 15px;
 }
