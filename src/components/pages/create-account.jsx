@@ -25,10 +25,10 @@ class CreateAccount extends React.Component {
   render() {
     return (
       <Page>
-        <Navbar title="Company" backLink="Back" sliding />
+        <Navbar backLink="Back" sliding />
         <List className="user-create no-hairlines-between no-hairlines">
           <ListItem id="welcome-list-header">
-            <ContentBlock className="welcome-header">
+            <ContentBlock className="create-header">
               CREATE NEW ACCOUNT
             </ContentBlock>
           </ListItem>
@@ -37,7 +37,7 @@ class CreateAccount extends React.Component {
               <ListItem className="form-list-item">
                 <FormInput
                   placeholder="First Name"
-                  className="select-input-main"
+                  className="select-input-create"
                   type="text"
                 />
               </ListItem>
@@ -46,7 +46,7 @@ class CreateAccount extends React.Component {
               <ListItem className="form-list-item">
                 <FormInput
                   placeholder="Last Name"
-                  className="select-input-main"
+                  className="select-input-create"
                   type="text"
                 />
               </ListItem>
@@ -56,7 +56,7 @@ class CreateAccount extends React.Component {
             <ListItem className="form-list-item">
               <FormInput
                 placeholder="Username"
-                className="select-input-main"
+                className="select-input-create"
                 type="text"
               />
             </ListItem>
@@ -65,7 +65,7 @@ class CreateAccount extends React.Component {
             <ListItem className="form-list-item">
               <FormInput
                 placeholder="Email Address"
-                className="select-input-main"
+                className="select-input-create"
                 type="text"
               />
             </ListItem>
@@ -74,21 +74,19 @@ class CreateAccount extends React.Component {
             <ListItem className="form-list-item">
               <FormInput
                 placeholder="Password"
-                className="select-input-main"
+                className="select-input-create"
                 type="text"
               />
             </ListItem>
           </div>
         </List>
 
-        <Button
-          big
-          fill
-          href="/main/"
-          title="Company"
-          className="bottom-button"
-        >
-          Continue
+        <ContentBlock id="terms-disclaimer" className="login-text">
+          By tapping "Sign Up" you agree to the terms & conditions
+        </ContentBlock>
+
+        <Button big fill href="/main/" title="Create" className="bottom-button">
+          Create New Account
         </Button>
       </Page>
     );

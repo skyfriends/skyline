@@ -8,8 +8,8 @@
 }
 
 .user-create {
-  margin-top: 30%;
-  margin-bottom: 8px;
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
 
 .item-content {
@@ -41,6 +41,10 @@
   border-bottom: none;
 }
 
+#terms-disclaimer {
+  width: 50%;
+}
+
 #welcome-list-header {
   background-color: #e2e5eb;
   border: none;
@@ -55,6 +59,16 @@
   letter-spacing: 4px;
   font-weight: 200;
   margin: 0 auto;
+}
+
+.create-header {
+  display: block;
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin: 0 auto;
+  margin-bottom: 20%;
 }
 
 .logo-box {
@@ -109,6 +123,11 @@
   line-height: 42px;
 }
 
+.select-input-create > input::placeholder {
+  padding-left: 8px;
+  font-size: 0.8em;
+  line-height: 42px;
+}
 .text-input-main {
   text-align: center;
 }
@@ -298,6 +317,7 @@
   border-bottom-right-radius: 0px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom: none;
 }
 
 #password-form-inner-container {
