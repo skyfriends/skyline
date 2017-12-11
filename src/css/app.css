@@ -48,8 +48,12 @@
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  /* position: absolute; */
+  position: absolute;
   bottom: 0;
+}
+
+#welcome-page-button {
+  bottom: 25%;
 }
 
 .button.button-fill {
@@ -223,6 +227,7 @@
   float: right;
   margin-right: 27px;
   margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 #no-account,
