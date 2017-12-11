@@ -12,6 +12,16 @@
   margin-bottom: 8px;
 }
 
+#firstname-form-inner-container {
+  width: 37.5%;
+  display: inline-block;
+}
+
+#lastname-form-inner-container {
+  width: 37.5%;
+  display: inline-block;
+}
+
 .item-content {
   border: 1px solid #e2e5eb;
 }
