@@ -217,10 +217,11 @@
 }
 
 .login-text {
-  margin: auto;
+  margin: 0 auto;
   height: auto;
   width: auto;
-  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 #forgot-password {
