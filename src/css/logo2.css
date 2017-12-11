@@ -1,13 +1,14 @@
 .logo-container {
   position: absolute;
-  padding-top: 50px;
+  /* padding-top: 40px; */
   margin-top: 10%;
   left: 30%;
   display: block;
   width: auto;
   height: auto;
   clear: both;
-  /* width:auto; */
+  /* width:50%; */
+  /* height: 50%; */
 }
 
 .logo-circles {
@@ -48,7 +49,7 @@
   /* border: 1px solid blue; */
   z-index: 10;
   position: absolute;
-  height: 28%;
+  height: 37%;
   width: 36%;
   margin-top: 49px;
   margin-left: 52px;

@@ -3,8 +3,8 @@
 }
 
 .user-login {
-  margin-top: 80%;
-  margin-bottom: 10px;
+  margin-top: 60%;
+  margin-bottom: 8px;
 }
 
 .item-content {
@@ -45,7 +45,9 @@
 }
 
 .bottom-button {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   /* position: absolute; */
   bottom: 0;
 }
@@ -133,6 +135,7 @@
 
 .button.button-fill {
   background-color: '#5EC2C4';
+  box-shadow: -1px 8px 39px -2px #5ec2c4;
 }
 
 .select-input-label {
@@ -187,6 +190,11 @@
   margin-bottom: 0;
 }
 
+.welcome-header {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 #welcome-sub {
   font-weight: 200;
   font-size: 1.15em;
@@ -210,21 +218,27 @@
 
 #forgot-password {
   float: right;
+  margin-right: 27px;
   margin-bottom: 20px;
 }
 
 #no-account, #create-account {
+  width: 100%;
+  display: inline-block;
   text-align: center;
 }
 
 #no-account {
-  width: 120px;
+  margin-top: 25%;
+  /* width: 120px; */
+  padding-left: 34%;
+  padding-right: 34%;
 }
 
 #create-account {
   color: #f59f25;
 }
 
-.item-content {
+.item-FVent {
   border-radius: 15px;
 }
