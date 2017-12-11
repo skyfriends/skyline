@@ -229,10 +229,11 @@
   margin-bottom: 20px;
 }
 
-
-#no-account, #create-account {
+#no-account,
+#create-account {
   width: 100%;
   display: inline-block;
+}
 
 #no-account {
   margin-top: 25%;
@@ -244,7 +245,6 @@
 #create-account {
   color: #f59f25;
 }
-
 
 .item-FVent {
   border-radius: 15px;
