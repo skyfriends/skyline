@@ -88,7 +88,7 @@
 .list-block input[type='text']:focus {
   /* color:transparent; */
 }
-.list-block li{
+.list-block li {
   outline: 3px solid #e2e5eb;
   outline-offset: -3.9px;
 }
@@ -131,6 +131,13 @@
   border: 1px solid #b2b2b2;
   height: 48px;
   width: 75%;
+}
+
+.select-input-main > input {
+  border: 1px solid #b2b2b2;
+  height: 48px;
+  width: 75%;
+  background-color: #e2e5eb !important;
 }
 
 .button.button-fill {
@@ -222,11 +229,10 @@
   margin-bottom: 20px;
 }
 
+
 #no-account, #create-account {
   width: 100%;
   display: inline-block;
-  text-align: center;
-}
 
 #no-account {
   margin-top: 25%;
@@ -239,6 +245,32 @@
   color: #f59f25;
 }
 
+
 .item-FVent {
   border-radius: 15px;
+}
+.item-content {
+  background-color: #e2e5eb;
+}
+
+.form-inner-container {
+  list-style: none;
+  margin: 0 auto;
+  width: 75%;
+  border: 1px solid #b2b2b2;
+}
+
+#username-form-inner-container {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#password-form-inner-container {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #b2b2b2;
 }

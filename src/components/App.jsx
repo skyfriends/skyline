@@ -18,7 +18,6 @@ import {
   Link,
   Icon,
   Pages,
-  FormLabel,
   ContentBlock
 } from 'framework7-react';
 import { Logo } from './pages/logo';
@@ -75,26 +74,38 @@ class Login extends React.Component {
                     WELCOME
                   </ContentBlock>
                 </ListItem>
-
-                <ListItem className="form-list-item">
-                  <FormInput
-                    placeholder="Email"
-                    onChange={e => this.userSelect(e)}
-                    className="select-input-main"
-                    type="text"
-                  />
-                </ListItem>
-                <ListItem className="form-list-item">
-                  <FormInput
-                    placeholder="Password"
-                    onChange={e => this.userSelect(e)}
-                    className="select-input-main"
-                    type="text"
-                  />
-                </ListItem>
+                <div
+                  className="form-inner-container"
+                  id="username-form-inner-container"
+                >
+                  <ListItem className="form-list-item">
+                    <FormInput
+                      placeholder="Email"
+                      onChange={e => this.userSelect(e)}
+                      className="select-input-main"
+                      type="text"
+                    />
+                  </ListItem>
+                </div>
+                <div
+                  className="form-inner-container"
+                  id="password-form-inner-container"
+                >
+                  <ListItem className="form-list-item">
+                    <FormInput
+                      placeholder="Password"
+                      onChange={e => this.userSelect(e)}
+                      className="select-input-main"
+                      type="text"
+                    />
+                  </ListItem>
+                </div>
               </List>
-              <ContentBlock id="forgot-password" className="login-text"> Forgot Password? </ContentBlock>
-              
+              <ContentBlock id="forgot-password" className="login-text">
+                {' '}
+                Forgot Password?{' '}
+              </ContentBlock>
+
               <Button
                 raised
                 big
@@ -106,9 +117,14 @@ class Login extends React.Component {
               >
                 Continue
               </Button>
-              <ContentBlock id="no-account" className="login-text"> Don't have an account?</ContentBlock>
-              <ContentBlock id="create-account" className="login-text"> Create new account </ContentBlock>
-              
+              <ContentBlock id="no-account" className="login-text">
+                {' '}
+                Don't have an account?
+              </ContentBlock>
+              <ContentBlock id="create-account" className="login-text">
+                {' '}
+                Create new account{' '}
+              </ContentBlock>
             </Page>
           </Pages>
         </View>
