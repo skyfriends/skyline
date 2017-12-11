@@ -34,7 +34,7 @@ class CreateAccount extends React.Component {
           </ListItem>
           <div
             className="form-inner-container"
-            id="username-form-inner-container"
+            id="firstname-form-inner-container"
           >
             <ListItem className="form-list-item">
               <FormInput
@@ -46,7 +46,7 @@ class CreateAccount extends React.Component {
           </div>
           <div
             className="form-inner-container"
-            id="password-form-inner-container"
+            id="lastname-form-inner-container"
           >
             <ListItem className="form-list-item">
               <FormInput
