@@ -69,7 +69,7 @@ class Login extends React.Component {
                 </NavRight>
               </Navbar>
               <Logo />
-              <List className="user-login">
+              <List className="user-login no-hairlines-between no-hairlines">
                 <ListItem id="welcome-list-header">
                   <ContentBlock className="welcome-header">
                     WELCOME
@@ -78,7 +78,7 @@ class Login extends React.Component {
 
                 <ListItem className="form-list-item">
                   <FormInput
-                    placeholder="Username"
+                    placeholder="Email"
                     onChange={e => this.userSelect(e)}
                     className="select-input-main"
                     type="text"
@@ -93,16 +93,22 @@ class Login extends React.Component {
                   />
                 </ListItem>
               </List>
-
+              <ContentBlock id="forgot-password" className="login-text"> Forgot Password? </ContentBlock>
+              
               <Button
+                raised
                 big
                 fill
+                round
                 href="/user/"
                 title="Company"
                 className="bottom-button"
               >
                 Continue
               </Button>
+              <ContentBlock id="no-account" className="login-text"> Don't have an account?</ContentBlock>
+              <ContentBlock id="create-account" className="login-text"> Create new account </ContentBlock>
+              
             </Page>
           </Pages>
         </View>
