@@ -122,7 +122,11 @@ class Login extends React.Component {
                 {' '}
                 Don't have an account?
               </ContentBlock>
-              <ContentBlock id="create-account" className="login-text">
+              <ContentBlock
+                id="create-account"
+                href="/create"
+                className="login-text"
+              >
                 {' '}
                 Create new account{' '}
               </ContentBlock>
