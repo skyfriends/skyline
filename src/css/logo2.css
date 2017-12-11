@@ -24,7 +24,8 @@
   /* position: relative; */
 }
 
-#logo-circle-upper, #logo-circle-lower {
+#logo-circle-upper,
+#logo-circle-lower {
   margin-left: 23%;
 }
 
@@ -33,13 +34,14 @@
   /* left: 100px; */
 }
 
-#logo-circle-right, #logo-circle-left {
-margin-top: 23%;
+#logo-circle-right,
+#logo-circle-left {
+  margin-top: 23%;
 }
 
 #logo-circle-right {
   background-color: #e51c0e;
-  margin-left: 40%;
+  margin-left: 43%;
 }
 #logo-circle-lower {
   background-color: #ea8aa7;
@@ -53,7 +55,7 @@ margin-top: 23%;
 #eye-container-outer {
   margin-left: 3%;
   display: inline-block;
-  width:80%;
+  width: 80%;
   height: 32%;
 }
 
