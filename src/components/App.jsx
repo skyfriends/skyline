@@ -39,17 +39,7 @@ class Login extends React.Component {
       <Views>
         <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
           <Navbar>
-            <NavLeft>
-              <Link openPanel="left">
-                <Icon f7="chevron_left" id="nav-back-button" />
-              </Link>
-            </NavLeft>
             <NavCenter sliding />
-            <NavRight>
-              <Link openPanel="right">
-                <Icon f7="close" id="nav-close-button" />
-              </Link>{' '}
-            </NavRight>
           </Navbar>
 
           <Pages>
