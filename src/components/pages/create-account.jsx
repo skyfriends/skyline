@@ -12,10 +12,8 @@ import '../../css/app.css';
 class CreateAccount extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = { firstName: '' };
     this.handleChange = this.handleChange.bind(this);
-    this.handleChecked = this.handleChecked.bind(this);
-    this.handlePhoneChange = this.handlePhoneChange.bind(this);
   }
 
   handleChange(e) {
