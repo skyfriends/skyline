@@ -32,34 +32,27 @@ class CreateAccount extends React.Component {
               CREATE NEW ACCOUNT
             </ContentBlock>
           </ListItem>
-          <div
-            className="form-inner-container"
-            id="firstname-form-inner-container"
-          >
-            <ListItem className="form-list-item">
-              <FormInput
-                placeholder="First Name"
-                className="select-input-main"
-                type="text"
-              />
-            </ListItem>
+          <div className="form-inner-container" id="split-container">
+            <div className="form-name-split" id="split-firstname">
+              <ListItem className="form-list-item">
+                <FormInput
+                  placeholder="First Name"
+                  className="select-input-main"
+                  type="text"
+                />
+              </ListItem>
+            </div>
+            <div className="form-name-split" id="split-lastname">
+              <ListItem className="form-list-item">
+                <FormInput
+                  placeholder="Last Name"
+                  className="select-input-main"
+                  type="text"
+                />
+              </ListItem>
+            </div>
           </div>
-          <div
-            className="form-inner-container"
-            id="lastname-form-inner-container"
-          >
-            <ListItem className="form-list-item">
-              <FormInput
-                placeholder="Last Name"
-                className="select-input-main"
-                type="text"
-              />
-            </ListItem>
-          </div>
-          <div
-            className="form-inner-container"
-            id="password-form-inner-container"
-          >
+          <div className="form-inner-container" id="username-create-account">
             <ListItem className="form-list-item">
               <FormInput
                 placeholder="Username"
@@ -68,10 +61,7 @@ class CreateAccount extends React.Component {
               />
             </ListItem>
           </div>
-          <div
-            className="form-inner-container"
-            id="password-form-inner-container"
-          >
+          <div className="form-inner-container" id="email-create-account">
             <ListItem className="form-list-item">
               <FormInput
                 placeholder="Email Address"
@@ -80,10 +70,7 @@ class CreateAccount extends React.Component {
               />
             </ListItem>
           </div>
-          <div
-            className="form-inner-container"
-            id="password-form-inner-container"
-          >
+          <div className="form-inner-container" id="password-create-account">
             <ListItem className="form-list-item">
               <FormInput
                 placeholder="Password"

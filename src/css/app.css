@@ -12,18 +12,33 @@
   margin-bottom: 8px;
 }
 
-#firstname-form-inner-container {
-  width: 37.5%;
-  display: inline-block;
-}
-
-#lastname-form-inner-container {
-  width: 37.5%;
-  display: inline-block;
-}
-
 .item-content {
   border: 1px solid #e2e5eb;
+}
+
+.form-name-split {
+  margin: 0;
+  border: none;
+  width: 50%;
+}
+
+#split-container {
+  display: flex;
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#split-firstname {
+  border-right: 1px solid #b2b2b2;
+}
+
+#username-create-account {
+  border-bottom: none;
+}
+
+#email-create-account {
+  border-bottom: none;
 }
 
 #welcome-list-header {
