@@ -49,11 +49,11 @@
   margin-left: 10%;
   margin-right: 10%;
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
 }
 
 #welcome-page-button {
-  bottom: 25%;
+  bottom: 23%;
 }
 
 .button.button-fill {
