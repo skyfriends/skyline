@@ -3,7 +3,7 @@
 }
 
 .user-login {
-  margin-top: 60%;
+  margin-top: 65%;
   margin-bottom: 8px;
 }
 
@@ -89,19 +89,18 @@
 }
 
 .bottom-button {
-  width: 80%;
+  border-radius: 27px;
   margin-left: 10%;
   margin-right: 10%;
   position: absolute;
-  bottom: 5%;
-}
-
-#welcome-page-button {
-  bottom: 23%;
+  width: 80%;
+  bottom: 14%;
 }
 
 .button.button-fill {
   background-color: #5ec2c4;
+  background-color: '#5EC2C4';
+  box-shadow: -1px 8px 39px -2px #5ec2c4;
 }
 
 .input-list {
@@ -143,7 +142,7 @@
 }
 
 #user-dropdown {
-  margin-top: 80%;
+  margin-top:65%;
 }
 
 .form-list-item {
@@ -187,11 +186,6 @@
   height: 48px;
   width: 75%;
   background-color: #e2e5eb !important;
-}
-
-.button.button-fill {
-  background-color: '#5EC2C4';
-  box-shadow: -1px 8px 39px -2px #5ec2c4;
 }
 
 .select-input-label {
@@ -287,7 +281,7 @@
 }
 
 #no-account {
-  margin-top: 25%;
+  margin-top: 33%;
   /* width: 120px; */
   padding-left: 34%;
   padding-right: 34%;

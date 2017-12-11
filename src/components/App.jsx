@@ -25,13 +25,21 @@ import { routes } from '../routes';
 
 class Login extends React.Component {
   constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
+    super(props)
+    this.state = { hidden: true }
+
+    this.handleClick = this.handleClick.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleClick() {
+    document.getElementsByClassName('navbar').s
+    console.log()
   }
 
   handleChange(e) {
-    let { name, value } = e.target;
-    this.setState({ [name]: value });
+    let { name, value } = e.target
+    this.setState({ [name]: value })
   }
 
   render() {
@@ -39,7 +47,17 @@ class Login extends React.Component {
       <Views>
         <View id="main-view" navbarThrough dynamicNavbar={true} main url="/">
           <Navbar>
+            <NavLeft>
+              <Link openPanel="left">
+                <Icon f7="chevron_left" id="nav-back-button" />
+              </Link>
+            </NavLeft>
             <NavCenter sliding />
+            <NavRight>
+              <Link openPanel="right">
+                <Icon f7="close" id="nav-close-button" />
+              </Link>{' '}
+            </NavRight>
           </Navbar>
 
           <Pages>
@@ -47,13 +65,21 @@ class Login extends React.Component {
               <Navbar>
                 <NavLeft>
                   <Link openPanel="left">
-                    <Icon f7="chevron_left" id="nav-back-button" />
+                    <Icon
+                      f7="chevron_left"
+                      id="nav-back-button"
+                      className="nav-icons"
+                    />
                   </Link>
                 </NavLeft>
                 <NavCenter sliding />
                 <NavRight>
                   <Link openPanel="right">
-                    <Icon f7="close" id="nav-close-button" />
+                    <Icon
+                      f7="close"
+                      id="nav-close-button"
+                      className="nav-icons"
+                    />
                   </Link>{' '}
                 </NavRight>
               </Navbar>
@@ -122,7 +148,7 @@ class Login extends React.Component {
           </Pages>
         </View>
       </Views>
-    );
+    )
   }
 }
 
