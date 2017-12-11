@@ -114,6 +114,7 @@ class Login extends React.Component {
                 href="/user/"
                 title="Company"
                 className="bottom-button"
+                id="welcome-page-button"
               >
                 Continue
               </Button>
