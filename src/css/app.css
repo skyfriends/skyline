@@ -292,3 +292,17 @@
   border-bottom-left-radius: 5px;
   border: 1px solid #b2b2b2;
 }
+
+.input-form-list-item {
+background: #e2e5eb;
+width: 100%;
+}
+
+.input-form-list ul{
+width: 100%;
+}
+
+.input-form-list .item-content{
+  background: white;
+  border-radius: 0;
+}

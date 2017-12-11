@@ -57,25 +57,14 @@ class Company extends React.Component {
   }
 
   render() {
-    return (
-      <Page>
+    return <Page>
         <Navbar title="Company" backLink="Back" sliding />
-        <List>
-          <ListItem>
-            <FormInput
-              type="text"
-              name="companyName"
-              onChange={this.handleChange}
-              value={this.state.companyName}
-              placeholder="Name"
-            />
+        <List className="input-form-list no-hairlines-between no-hairlines">
+          <ListItem className="input-form-list-item">
+            <FormInput type="text" name="companyName" onChange={this.handleChange} value={this.state.companyName} placeholder="Name" />
           </ListItem>
           <ListItem>
-            <FormInput
-              className="select-input-main"
-              type="select"
-              id="company-select"
-            >
+            <FormInput className="select-input-main" type="select" id="company-select">
               <option value="1">Investment Bank</option>
               <option value="2">Hedge Fund</option>
               <option value="3">Mutual Fund</option>
@@ -85,85 +74,33 @@ class Company extends React.Component {
             </FormInput>
           </ListItem>
           <ListItem className="form-list-item">
-            <FormInput
-              type="text"
-              name="email"
-              placeholder="Email"
-              cursor="none"
-              onChange={this.handleChange}
-              value={this.state.email}
-            />
+            <FormInput type="text" name="email" placeholder="Email" cursor="none" onChange={this.handleChange} value={this.state.email} />
           </ListItem>
 
           <ListItem className="form-list-item">
-            <FormInput
-              type="text"
-              name="address"
-              placeholder="Address"
-              onChange={this.handleChange}
-              value={this.state.address}
-            />
+            <FormInput type="text" name="address" placeholder="Address" onChange={this.handleChange} value={this.state.address} />
           </ListItem>
 
           <ListItem className="form-list-item">
-            <FormInput
-              type="text"
-              name="phone"
-              placeholder="Phone"
-              onChange={this.handlePhoneChange}
-              value={this.state.phone}
-            />
+            <FormInput type="text" name="phone" placeholder="Phone" onChange={this.handlePhoneChange} value={this.state.phone} />
           </ListItem>
 
           <ListItem className="form-list-item">
-            <FormInput
-              type="text"
-              name="employees"
-              placeholder="Number of Employees"
-              onChange={this.handleChange}
-              value={this.state.employees}
-            />
+            <FormInput type="text" name="employees" placeholder="Number of Employees" onChange={this.handleChange} value={this.state.employees} />
           </ListItem>
           <ListItem className="form-list-item">
-            <FormInput
-              type="text"
-              name="asset"
-              placeholder="Asset Under Management"
-              onChange={this.handleChange}
-              value={this.state.asset}
-            />
+            <FormInput type="text" name="asset" placeholder="Asset Under Management" onChange={this.handleChange} value={this.state.asset} />
           </ListItem>
 
           <ListItem className="form-list-item">
-            <FormInput
-              type="password"
-              name="password"
-              placeholder="Password"
-              onChange={this.handleChange}
-              value={this.state.password}
-            />
+            <FormInput type="password" name="password" placeholder="Password" onChange={this.handleChange} value={this.state.password} />
           </ListItem>
-          <ListItem
-            checkbox
-            name="push-notification"
-            value="1"
-            title="Enable Push Notification "
-            checked={this.state.checked}
-            onChange={this.handleChecked}
-            className="form-list-item"
-          />
-          <Button
-            big
-            fill
-            href="/main/"
-            title="Company"
-            className="bottom-button"
-          >
+          <ListItem checkbox name="push-notification" value="1" title="Enable Push Notification " checked={this.state.checked} onChange={this.handleChecked} className="form-list-item" />
+          <Button big fill href="/main/" title="Company" className="bottom-button">
             Continue
           </Button>
         </List>
       </Page>
-    );
   }
 }
 
